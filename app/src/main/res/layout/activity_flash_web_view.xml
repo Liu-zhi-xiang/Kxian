@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/cFFFFFFFF"
+    android:orientation="vertical">
+
+
+    <WebView
+        android:id="@+id/sharewebView"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/d60"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" />
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cffffff">
+
+
+        <WebView
+            android:id="@+id/webViewdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/webview_progress_color"
+            android:visibility="gone" />
+
+
+        <com.gjmetal.app.widget.EmptyView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cFFFFFFFF"
+            android:visibility="gone">
+
+        </com.gjmetal.app.widget.EmptyView>
+    </FrameLayout>
+
+</RelativeLayout>

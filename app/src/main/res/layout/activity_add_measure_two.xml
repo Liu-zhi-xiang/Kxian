@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c2A2D4F"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingHorizontal="@dimen/d16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d20"
+            android:layout_marginTop="@dimen/d9"
+            android:gravity="center_vertical"
+            android:text="@string/month_type"
+            android:textColor="@color/cD4975C"
+            android:textSize="@dimen/f14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d13"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/d14">
+
+            <RadioButton
+                android:id="@+id/rbSubtraction"
+                style="@style/lme_tab_radiobutton_two"
+                android:layout_marginRight="@dimen/d20"
+                android:checked="true"
+                android:text="@string/subtraction_text"
+                android:textColor="@color/cE7EDF5"
+                android:textSize="@dimen/f16" />
+
+            <RadioButton
+                android:id="@+id/rbVariety"
+                style="@style/lme_tab_radiobutton_two"
+                android:layout_marginRight="@dimen/d20"
+                android:checked="false"
+                android:text="@string/txt_variety"
+                android:textColor="@color/cE7EDF5"
+                android:textSize="@dimen/f16" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/c10ffffff" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpAddMeasure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvMeasureLeftName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/c6A798E"
+        android:textSize="@dimen/f12" />
+
+    <TextView
+        android:id="@+id/tvMeasureLeftValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d3"
+        android:gravity="center|left"
+        android:text="4155.9"
+        android:textColor="@color/c9EB2CD"
+        android:textSize="@dimen/f14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/cFF353858" />
+</LinearLayout>

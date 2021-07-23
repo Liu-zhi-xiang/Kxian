@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c00000000"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        app:cardBackgroundColor="@color/c2A2D4F"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"
+        app:contentPaddingRight="0dp"
+        app:contentPaddingLeft="0dp"
+        app:cardElevation="@dimen/d5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF5F5F5">
+
+            <com.gjmetal.app.widget.NumKeyView
+                android:id="@+id/keyboardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+
+                app:keyTextSize="25sp"
+                app:deleteDrawable="@drawable/ic_calculator_delete"
+                app:keyBackgBackground="@drawable/shape_key_bg_view"
+                app:keyClickBackgBackground="@drawable/shape_key_click_bg_view"
+                app:keyboardBackgBackground="#FFF5F5F5" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/iv_hide"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+       android:layout_above="@id/cardView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:background="@color/cE7EDF5">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_calculator_up" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,374 @@
+<resources>
+
+    <!-- Base application theme. test-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/cffffff</item>
+    </style>
+
+    <style name="AppWelcome" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/welcome_bg</item>  //闪屏页图片
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/cffffff</item>
+        <item name="colorPrimaryDark">@color/cffffff</item>
+        <item name="colorAccent">@color/cffffff</item>
+    </style>
+
+    <style name="TabTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="TextAppearance.Design.Tab" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/f16</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+<!--    <style name="tablayoutTextAppearance" parent="TextAppearance.Design.Tab">-->
+<!--        <item name="textAllCaps">true</item>-->
+<!--        <item name="android:textAllCaps">true</item>-->
+<!--        <item name="android:textSize">@dimen/f16</item>-->
+<!--    </style>-->
+
+    <!--底部导航栏-->
+    <style name="fill_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="main_navi_radiogroup" parent="@style/fill_wrap">
+        <item name="android:weightSum">5</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="main_navi_radiobutton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/f11</item>
+        <item name="android:textColor">@drawable/menu_item_selecter</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <style name="lme_tab_radiobutton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/d40</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/d6</item>
+        <item name="android:drawableLeft">@drawable/selecter_aplemetal_rb</item>
+        <item name="android:textSize">@dimen/f16</item>
+        <item name="android:textColor">@drawable/rb_lme_text_selecter</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!--Lme-->
+    <style name="lme_tab_radiobutton_two">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/d30</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/d6</item>
+        <item name="android:drawableLeft">@drawable/selecter_aplemetal_rb</item>
+        <item name="android:textSize">@dimen/f11</item>
+        <item name="android:textColor">@drawable/rb_lme_text_selecter</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!--flash-title-->
+    <style name="flash_tab_radiobutton">
+        <item name="android:drawableBottom">@drawable/menu_item_falsh</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/f18</item>
+        <item name="android:textColor">@drawable/tab_flash_text_selector</item>
+        <item name="android:paddingRight">@dimen/d12</item>
+        <item name="android:paddingLeft">@dimen/d12</item>
+        <item name="android:clickable">true</item>
+
+    </style>
+
+
+    <style name="unit_group_excel">
+        <item name="android:weightSum">2</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="login_et_input">
+        <item name="android:textSize">@dimen/f17</item>
+        <item name="android:textColorHint">@color/c9EB2CD</item>
+        <item name="android:textColor">@color/c17</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">@dimen/d10</item>
+        <item name="android:textCursorDrawable">@drawable/edit_input_cursor</item>
+        <item name="android:cursorVisible">true</item>
+    </style>
+    <!--输入光标颜色-->
+    <style name="input_style">
+    <item name="android:textCursorDrawable">@drawable/edit_input_cursor</item>
+    <item name="android:cursorVisible">true</item>
+</style>
+    <style name="my_layout_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/d16</item>
+        <item name="android:paddingBottom">@dimen/d16</item>
+        <item name="android:paddingRight">@dimen/d10</item>
+        <item name="android:paddingLeft">@dimen/d24</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/item_my_bg_selector</item>
+    </style>
+
+    <style name="my_layout_ll_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/d18</item>
+        <item name="android:paddingBottom">@dimen/d18</item>
+        <item name="android:paddingRight">@dimen/d10</item>
+        <item name="android:paddingLeft">@dimen/d30</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/item_my_bg_selector</item>
+    </style>
+
+    <style name="login_text">
+        <item name="android:textSize">@dimen/f15</item>
+        <item name="android:textColor">@color/c17</item>
+    </style>
+
+    <style name="company_text">
+        <item name="android:textSize">@dimen/f16</item>
+        <item name="android:textColor">@color/c333333</item>
+    </style>
+
+
+    <style name="btn_login_style">
+        <item name="android:textSize">@dimen/f16</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/cFFFFFFFF</item>
+        <item name="android:background">@drawable/shape_login_btn_nor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/d50</item>
+    </style>
+
+
+    <style name="future_rb_excel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/f14</item>
+        <item name="android:textColor">@drawable/tab_text_selector</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingRight">@dimen/d25</item>
+        <item name="android:paddingLeft">@dimen/d25</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <style name="measure_rb_excel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">@dimen/d100</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/f14</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@drawable/tab_text_selector</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <!--数据导航栏-->
+
+    <!-- 弹框dialog样式 -->
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- window背景颜色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 屏幕内容区域以外的背景是否可以设置灰度值(与backgroundDimAmount搭配使用) -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 灰度值 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <!--<item name="android:windowLightStatusBar">false</item>-->
+        <!-- <item name="android:windowAnimationStyle">@style/ActionSheetAnimation</item> -->
+    </style>
+    <!-- 底部dialog显示动画 -->
+    <style name="dialogWindowAnim">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+
+    <!--自定义Dialog-->
+    <style name="LoadingDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--Dialog样式-->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="TransparentFrameWindowStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/main_menu_animstyle</item>
+    </style>
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+
+    <declare-styleable name="CalendarView">
+
+        <attr name="week_background" format="color" />
+        <attr name="week_line_background" format="color" />
+        <attr name="week_text_color" format="color" />
+
+        <attr name="month_view" format="string" /><!--完全自定义月视图-->
+
+        <attr name="week_view" format="string" /> <!--完全自定义周视图-->
+        <attr name="week_bar_height" format="dimension" /> <!--星期栏的高度-->
+        <attr name="week_bar_view" format="string" /> <!--如果需要的话使用自定义星期栏-->
+
+        <attr name="scheme_text" format="string" />
+        <attr name="day_text_size" format="dimension" />
+        <attr name="lunar_text_size" format="dimension" />
+        <attr name="calendar_height" format="dimension" />
+        <attr name="scheme_text_color" format="color" />
+        <attr name="scheme_month_text_color" format="color" />
+        <attr name="scheme_lunar_text_color" format="color" />
+        <attr name="scheme_theme_color" format="color" />
+
+        <attr name="selected_theme_color" format="color" />
+        <attr name="selected_text_color" format="color" />
+        <attr name="selected_lunar_text_color" format="color" />
+
+        <attr name="current_day_text_color" format="color" />
+        <attr name="current_day_lunar_text_color" format="color" />
+        <attr name="current_month_text_color" format="color" />
+        <attr name="other_month_text_color" format="color" />
+        <attr name="current_month_lunar_text_color" format="color" />
+        <attr name="other_month_lunar_text_color" format="color" />
+
+
+        <!-- 年视图相关 -->
+        <attr name="year_view_month_text_size" format="dimension" />
+        <attr name="year_view_day_text_size" format="dimension" />
+        <attr name="year_view_month_text_color" format="color" />
+        <attr name="year_view_day_text_color" format="color" />
+        <attr name="year_view_scheme_color" format="color" />
+        <attr name="year_view_background" format="color" />
+
+        <!--日期范围-->
+        <attr name="min_year" format="integer" />
+        <attr name="max_year" format="integer" />
+        <attr name="min_year_month" format="integer" />
+        <attr name="max_year_month" format="integer" />
+
+
+        <!-- 月份显示模式 -->
+        <attr name="month_view_show_mode">
+            <enum name="mode_all" value="0" />
+            <enum name="mode_only_current" value="1" />
+            <enum name="mode_fix" value="2" />
+        </attr>
+
+        <!--<attr name="select_mode">-->
+        <!--<enum name="default_mode" value="0"/>-->
+        <!--<enum name="single_mode" value="1"/>-->
+        <!--</attr>-->
+    </declare-styleable>
+
+
+    <declare-styleable name="CalendarLayout">
+        <attr name="default_status">
+            <enum name="expand" value="0" />
+            <enum name="shrink" value="1" />
+        </attr>
+        <attr name="only_week_view" format="boolean" />
+
+        <attr name="calendar_show_mode">
+            <enum name="both_month_week_view" value="0" />
+            <enum name="only_week_view" value="1" />
+            <enum name="only_month_view" value="2" />
+        </attr>
+
+        <attr name="calendar_content_view_id" format="integer" />
+    </declare-styleable>
+
+    <!--GroupRecyclerView-->
+    <declare-styleable name="GroupRecyclerView">
+        <attr name="group_height" format="dimension" />
+        <attr name="group_child_offset" format="dimension" />
+        <attr name="group_background" format="color" />
+        <attr name="group_text_color" format="color" />
+        <attr name="group_text_size" format="dimension" />
+        <attr name="group_center" format="boolean" />
+        <attr name="group_padding_left" format="dimension" />
+        <attr name="group_padding_right" format="dimension" />
+        <attr name="group_has_header" format="boolean" />
+    </declare-styleable>
+
+    <style name="PopWindowstyle">
+        <item name="android:windowEnterAnimation">@anim/showanim</item>
+        <item name="android:windowExitAnimation">@anim/dismissanim</item>
+    </style>
+
+
+    <!--键盘属性-->
+    <declare-styleable name="NumKeyView">
+        <attr name="keyboardBackgBackground" format="color|reference"></attr>
+        <attr name="keyBackgBackground" format="color|reference"></attr>
+        <attr name="keyClickBackgBackground" format="color|reference"></attr>
+        <attr name="deleteDrawable" format="reference"></attr>
+        <attr name="keyTextSize" format="dimension"></attr>
+        <attr name="leftPadding" format="dimension"></attr>
+        <attr name="rightPadding" format="dimension"></attr>
+        <attr name="topPadding" format="dimension"></attr>
+        <attr name="bottomPadding" format="dimension"></attr>
+    </declare-styleable>
+</resources>

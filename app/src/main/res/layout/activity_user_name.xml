@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cF5F5F5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/d10"
+        android:background="@color/cFFFFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:gravity="center"
+            android:text="@string/input_name"
+            android:textColor="@color/c333333"
+            android:textSize="@dimen/f16"
+            android:visibility="gone" />
+
+        <com.gjmetal.app.widget.ClearEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shap_edittextbg"
+            android:gravity="center_vertical"
+            android:maxLength="20"
+            android:paddingLeft="@dimen/d15"
+            android:textColor="@color/c333333"
+            android:textColorHint="@color/c999999"
+            style="@style/input_style"
+            android:textSize="@dimen/f16" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginTop="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:text="@string/input_name_tip"
+        android:textColor="@color/c6A798E"
+        android:textSize="@dimen/f12" />
+
+</LinearLayout>

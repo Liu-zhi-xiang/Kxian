@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gjmetal.app">
+
+    <uses-sdk tools:overrideLibrary="com.example.fixedfloatwindow,cn.sharesdk,cn.jzvd" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.NETWORK_PROVIDER"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 锁屏 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" /> <!-- 【必选】用以设置前台是否显示通知 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" /> <!-- 异步广播消息权限 -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 拍照和访问手机相册 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 添加可以向外拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 安装apk权限 -->
+    <permission android:name="android.permission.INSTALL_PACKAGES" /> <!-- 8.0安装权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" /> <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 快捷方式 -->
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" /> <!-- 定位包、导航包需要的额外权限（注：基础权限也需要） -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- talkingdata -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="MediaStore.Images.Media.INTERNAL_CONTENT_URI"/>
+    <uses-permission android:name="MediaStore.Images.Media.EXTERNAL_CONTENT_URI"/>
+    <uses-permission  android:name = "android.permission.GET_TASKS"/>
+    <application
+        android:name=".base.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name,android:allowBackup">
+<!--解决 xutils 下载时 org.apache.http.legacy 库不可用问题-->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity
+            android:name=".ui.welcome.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppWelcome"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- h5启动app -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app.gjmetal.com"
+                    android:path="/open"
+                    android:scheme="gjmetal" />
+            </intent-filter>
+        </activity> <!-- 友盟消息推送 -->
+        <!-- 公司 key:5ad56c87f43e48627c000093 -->
+        <!-- 个人测试Key:5c99b7c60cafb255e0000249 -->
+        <!--<meta-data-->
+        <!--android:name="UMENG_APPKEY"-->
+        <!--android:value="5ad56c87f43e48627c000093" />-->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" /> <!-- 华为消息推送 -->
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=100266779" /> <!-- talkingdata -->
+        <service
+            android:name="com.talkingdata.sdk.TDAntiCheatingService"
+            android:process="com.talkingdata.sdk.TDAntiCheatingService">
+            <intent-filter>
+                <action android:name="com.talkingdata.sdk.TDAntiCheatingService" />
+            </intent-filter>
+        </service>
+
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" /> <!-- 引导 -->
+        <activity
+            android:name=".ui.welcome.NewUserGuideActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" /> <!-- 友盟消息推送 -->
+        <activity
+            android:name=".ui.PushActivity"
+            android:exported="true"
+            android:launchMode="singleTask" /> <!-- 登录 -->
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" /> <!-- 指标名称 -->
+        <!-- 企业认证 -->
+        <activity
+            android:name=".ui.my.auth.CompanyAuthMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 基类webview -->
+        <activity
+            android:name=".base.BaseWebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 快报详情 -->
+        <activity
+            android:name=".ui.flash.FlashDetaiActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 广告webview -->
+        <activity
+            android:name=".ui.welcome.AdWebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/> <!-- 盘口 -->
+        <activity
+            android:name=".ui.market.chart.TapeSocketActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 跨月基差盘口 -->
+        <activity
+            android:name=".ui.alphametal.subtraction.IndustryTapeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 进口测算盘口 -->
+        <activity
+            android:name=".ui.alphametal.subtraction.SubtractionTapeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 进口测算盘口 -->
+        <activity
+            android:name=".ui.alphametal.measure.MeasureTapeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 进口测算k线图 -->
+        <!-- 进口测算k线图 -->
+        <activity
+            android:name=".ui.alphametal.measure.MeasureChartActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" /> <!-- 用户协议 -->
+        <!-- 用户协议 -->
+        <activity
+            android:name=".ui.register.RegisterWebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 数组K线图 -->
+        <!-- 发送邀请码 -->
+        <activity
+            android:name=".ui.my.auth.CompanySendApplyCode"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 添加企业成员 -->
+        <activity
+            android:name=".ui.my.auth.CompanyAddPersonActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 加入企业 -->
+        <activity
+            android:name=".ui.my.auth.CompanyJoinActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 注册 -->
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" /> <!-- 注册提交 -->
+        <activity
+            android:name=".ui.register.RegisterNextActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" /> <!-- 重置密码 -->
+        <activity
+            android:name=".ui.login.ForGetPswActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" /> <!-- 我的 -->
+        <!-- 添加自选 -->
+        <activity
+            android:name=".ui.market.change.AddMarketTagActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 行情搜索 -->
+        <activity
+            android:name=".ui.market.search.SearchMarketActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 资讯标签 -->
+        <activity
+            android:name=".ui.information.InfomationTabsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 资讯搜索 -->
+        <activity
+            android:name=".ui.information.InfomationSearchActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 数据搜索 -->
+        <!-- 关于我们 -->
+        <activity
+            android:name=".ui.my.AboutUsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 系统设置 -->
+        <activity
+            android:name=".ui.my.SystemSettingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 利率分时图 -->
+        <activity
+            android:name=".ui.market.chart.ExchangeChartActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" /> <!-- webview -->
+        <activity
+            android:name=".ui.information.InformationWebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity> <!-- 数据选择时间 -->
+        <!-- 选择指标 -->
+        <!-- 修改用户信息 -->
+        <activity
+            android:name=".ui.my.CheckUserInfoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 修改名字 -->
+        <activity
+            android:name=".ui.my.CheckUserNameActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 修改用户手机号 -->
+        <activity
+            android:name=".ui.my.CheckUserPhoneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" /> <!-- 收藏 -->
+        <activity
+            android:name=".ui.my.ColletctActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 文件下载 -->
+        <activity
+            android:name=".ui.information.FileDownLoadActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 消息 -->
+        <activity
+            android:name=".ui.my.MessageActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- K线 -->
+        <activity
+            android:name=".ui.market.chart.MarketChartActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateHidden" /> <!-- 图片7.0 -->
+        <!-- <provider -->
+        <!-- android:name="android.support.v4.content.FileProvider" -->
+        <!-- android:authorities="com.gjmetal.app.fileprovider" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/file_paths" /> -->
+        <!-- </provider> -->
+        <service
+            android:name=".util.DownloadService"
+            android:exported="false" /> <!-- 现货报价 -->
+        <activity
+            android:name=".ui.spot.SpotOfferChartActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 现货库存 -->
+        <activity
+            android:name=".ui.spot.SpotStockActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- ApleMateal 股权计算器计算结果 -->
+        <activity
+            android:name=".ui.alphametal.calculator.ComputerValueActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 添加预警 -->
+        <activity
+            android:name=".ui.my.warn.WarningAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 我的预警 -->
+        <!-- 我的预警 -->
+        <activity
+            android:name=".ui.my.warn.WarningUserActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 编辑预警 -->
+        <activity
+            android:name=".ui.my.warn.WarningEditActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 快讯标签选择 -->
+        <activity
+            android:name=".ui.flash.FlashTabsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 调期费详情 -->
+        <activity
+            android:name=".ui.alphametal.lme.SwapDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 调期费详情 -->
+        <activity
+            android:name=".ui.alphametal.subtraction.add.SubtractionAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 添加跨月基差 -->
+         <!-- 我的界面 -->
+        <activity
+            android:name=".ui.my.MyInformationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 修改密码 -->
+        <activity
+            android:name=".ui.my.UpdatePasswordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- 消息详情 -->
+        <activity
+            android:name=".ui.my.MessageDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.alphametal.subtraction.SubtractionChartActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" /><!-- 跨月基差 -->
+
+        <activity
+            android:name=".ui.alphametal.subtraction.IndustryChartActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" /><!-- 跨月基差 -->
+        <!-- 跨月基差 -->
+        <activity
+            android:name=".ui.my.ApplyForReadActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 申请订阅 -->
+        <activity
+            android:name=".ui.my.ApplyForReadWebActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /><!-- 申请订阅 h5 -->
+        <activity
+            android:name=".ui.my.AdviceFeedbackActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" /> <!-- 意见反馈 -->
+        <!-- 现货更多详情列表 -->
+        <activity
+            android:name=".ui.spot.SpotDetailOfferListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 期权详情 -->
+        <activity
+            android:name=".ui.market.OtoOptionsDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 全面屏适配 -->
+        <activity
+            android:name=".ui.flash.FlashWebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 会员中心 -->
+        <activity
+            android:name=".ui.my.VipUserCenterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 持仓分析详情 -->
+        <activity
+            android:name=".ui.spot.SpotAnalysisDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="请求地址设置"
+            android:textColor="@color/c4"
+            android:textSize="@dimen/f16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/c15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rgHttpSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbHttp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="http"
+                    android:visibility="gone"
+                    android:textColor="@color/c21"
+                    android:textSize="@dimen/f14" />
+                <RadioButton
+                    android:id="@+id/rbHttps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="https"
+                    android:textColor="@color/c21"
+                    android:textSize="@dimen/f14" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rgUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="测试环境"
+                    android:minHeight="@dimen/d40"
+                    android:textColor="@color/c21" />
+
+                <RadioButton
+                    android:id="@+id/rbFromat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/d40"
+                    android:text="正式环境"
+                    android:visibility="gone"
+                    android:textColor="@color/c21" />
+
+                <RadioButton
+                    android:id="@+id/rblive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/d40"
+                    android:text="live环境"
+                    android:textColor="@color/c21" />
+                <RadioButton
+                    android:id="@+id/rbLive2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/d40"
+                    android:text="live2环境"
+                    android:textColor="@color/c21" />
+                <RadioButton
+                    android:id="@+id/rbLive3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/d40"
+                    android:text="live3环境"
+                    android:textColor="@color/c21" />
+
+                <RadioButton
+                    android:id="@+id/rbEditIp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/d40"
+                    android:text="输入IP地址"
+                    android:visibility="gone"
+                    android:textColor="@color/c21" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etIp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="请输入IP地址"
+                android:padding="15dp"
+                android:textColor="@color/c21"
+                android:textCursorDrawable="@drawable/shape_edit_input_xian"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/c15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_sure_selector"
+                android:textColor="@color/c21"
+                android:text="取消" />
+
+            <View
+                android:id="@+id/vCenter"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/c15" />
+
+            <Button
+                android:id="@+id/btnSure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_cancel_selector"
+                android:textColor="@color/c1"
+                android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

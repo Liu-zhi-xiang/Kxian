@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d10"
+        android:background="@color/c202239" />
+
+    <RadioGroup
+        android:id="@+id/rgTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rbDayComparison"
+            style="@style/lme_tab_radiobutton"
+            android:checked="true"
+            android:text="@string/txt_day_comparison" />
+
+        <RadioButton
+            android:id="@+id/rbWeekComparison"
+            style="@style/lme_tab_radiobutton"
+            android:text="@string/txt_week_comparison" />
+
+        <RadioButton
+            android:id="@+id/rbTwoWeekComparison"
+            style="@style/lme_tab_radiobutton"
+            android:text="@string/txt_twoweek_comparison" />
+    </RadioGroup>
+
+    <com.gjmetal.app.widget.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d44">
+                <TextView
+                    android:id="@+id/tvLmeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/ic_global_line"
+                    android:drawablePadding="@dimen/d6"
+                    android:text="- -"
+                    android:textColor="@color/cE7EDF5"
+                    android:textSize="@dimen/f16" />
+
+                <TextView
+                    android:id="@+id/tvSwapsDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/d9"
+                    android:textSize="@dimen/f14"
+                    android:textColor="@color/c9EB2CD"
+                    android:text="调期费详情 >>"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvLmeTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d20"
+                android:textColor="@color/c9EB2CD"
+                android:textSize="@dimen/f13" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d3"
+                android:layout_marginBottom="@dimen/d4"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/d18"
+                android:paddingRight="@dimen/d18">
+
+                <com.gjmetal.app.widget.autoText.AutofitTextView
+                    android:id="@+id/tvCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_weight="1"
+                    android:textColor="@color/cE7EDF5"
+                    android:textSize="@dimen/f14"
+                    android:lines="1"
+                    autofit:minTextSize="@dimen/f6"/>
+
+                <com.gjmetal.app.widget.autoText.AutofitTextView
+                    android:id="@+id/tv3M"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/cE7EDF5"
+                    android:gravity="center|left"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/d10"
+                    autofit:minTextSize="@dimen/d6"
+                    android:textSize="@dimen/f14" />
+
+                <com.gjmetal.app.widget.autoText.AutofitTextView
+                    android:id="@+id/tvTom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/cE7EDF5"
+                    android:paddingLeft="@dimen/d10"
+                    android:textSize="@dimen/f14"
+                    android:gravity="center|left"
+                    android:lines="1"
+                    autofit:minTextSize="@dimen/f6"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:background="@color/c10FFFFFF" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d250">
+
+                <com.star.kchart.lemview.GroupView
+                    android:id="@+id/lme_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true" />
+
+                <com.gjmetal.app.widget.EmptyView
+                    android:id="@+id/lmeEmpty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/viewTab"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:background="@color/c10FFFFFF" />
+
+            <include layout="@layout/layout_lme_bottom" />
+        </LinearLayout>
+    </com.gjmetal.app.widget.MyScrollView>
+</LinearLayout>

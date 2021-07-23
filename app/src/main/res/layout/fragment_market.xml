@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <com.gjmetal.app.widget.Titlebar
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+    <com.gjmetal.app.widget.looper.LoopViewPager
+        android:id="@+id/vpFuture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      />
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/viewTab"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

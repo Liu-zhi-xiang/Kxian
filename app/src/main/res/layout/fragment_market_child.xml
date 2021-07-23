@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        app:tabTextAppearance="@style/TabTextStyle"
+        android:layout_alignParentTop="true"
+        android:background="@color/c2A2D4F"
+        android:gravity="center_vertical"
+        android:overScrollMode="never"
+        android:visibility="gone"
+        app:tabBackground="@drawable/tab_layout_selector"
+        app:tabIndicatorColor="@color/cD4975C"
+        app:tabIndicatorHeight="0dp"
+        app:tabMaxWidth="@dimen/d300"
+        app:tabMinWidth="@dimen/d20"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="15dp"
+        app:tabPaddingStart="@dimen/d15"
+        app:tabSelectedTextColor="@color/cffffff"
+        app:tabTextColor="@color/c9EB2CD" />
+
+    <include
+        android:id="@+id/viewTab"
+        layout="@layout/layout_future_tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayout"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFutureChild"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewTab"
+        android:fadeScrollbars="true"
+        android:visibility="visible" />
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewTab"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/llExChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/d3"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/c2A2D4F"
+        android:paddingBottom="@dimen/d5"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvMyExChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_change_manager"
+            android:drawableLeft="@mipmap/ic_future_edit_nor"
+            android:drawablePadding="@dimen/d10"
+            android:gravity="center"
+            android:paddingLeft="@dimen/d25"
+            android:paddingTop="@dimen/d10"
+            android:paddingRight="@dimen/d25"
+            android:paddingBottom="@dimen/d10"
+            android:text="@string/txt_my_change_manager"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f16" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

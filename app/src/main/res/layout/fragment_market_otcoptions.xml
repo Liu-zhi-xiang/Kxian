@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTabMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="@color/c0DFFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOtcAvg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/d16"
+                android:text="- -"
+                android:textColor="@color/c9EB2CD"
+                android:textSize="@dimen/f16" />
+
+            <View
+                android:id="@+id/vTopLine"
+                android:layout_width="@dimen/d1"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tabLayout"
+                android:background="@color/c0DFFFFFF" />
+
+            <com.gjmetal.app.widget.autoText.AutofitTextView
+                android:id="@+id/tvOtcDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/d16"
+                android:paddingRight="@dimen/d10"
+                android:text="- -"
+                android:textColor="@color/c9EB2CD"
+                android:textSize="@dimen/f16"
+                autofit:minTextSize="@dimen/f8" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="@color/c0DFFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llTabMenu"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/leftCardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:background="@color/c2A2D4F"
+            app:cardBackgroundColor="@color/c2A2D4F"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false"
+            app:contentPaddingRight="0dp">
+
+            <LinearLayout
+                android:id="@+id/llLeft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d28"
+                    android:paddingRight="@dimen/d10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvGoods"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/d8"
+                        android:text="@string/txt_goods_price"
+                        android:textColor="@color/c6A798E"
+                        android:textSize="@dimen/f13" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d5"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical|right"
+                        android:lines="1"
+                        android:text="@string/txt_otc_price"
+                        android:textColor="@color/c6A798E"
+                        android:textSize="@dimen/f13" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/leftRv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:overScrollMode="never"
+                    android:background="@color/c2A2D4F"
+                    android:fadeScrollbars="true"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <com.gjmetal.app.widget.SwapScrollView
+            android:id="@+id/svRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d28"
+                    android:background="@color/c2A2D4F"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/d80"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/txt_buy_price"
+                        android:textColor="@color/c6A798E"
+                        android:textSize="@dimen/f13" />
+
+                    <TextView
+                        android:layout_width="@dimen/d80"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/txt_sell_price"
+                        android:textColor="@color/c6A798E"
+                        android:textSize="@dimen/f13" />
+
+                    <TextView
+                        android:layout_width="@dimen/d80"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/txt_buy_price_percent"
+                        android:textColor="@color/c6A798E"
+                        android:textSize="@dimen/f13" />
+
+                    <TextView
+                        android:id="@+id/tvSellPercent"
+                        android:layout_width="@dimen/d80"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_marginRight="@dimen/d10"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/txt_sell_price_percent"
+                        android:textColor="@color/c6A798E"
+                        android:textSize="@dimen/f13" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rightRv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/c2A2D4F"
+                    android:fillViewport="true"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </com.gjmetal.app.widget.SwapScrollView>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/vXian"
+        android:layout_width="@dimen/d1"
+        android:layout_height="@dimen/d1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d43"/>
+    <ImageView
+        android:id="@+id/ivToLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/vXian"
+        android:layout_marginTop="@dimen/d43"
+        android:layout_marginLeft="@dimen/d5"
+        android:visibility="gone"
+        android:background="@mipmap/ic_chart_list_left" />
+    <ImageView
+        android:id="@+id/ivToright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/d43"
+        android:visibility="gone"
+        android:background="@mipmap/ic_chart_list_right" />
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llTop"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/item_bg_selector"
+    android:layout_height="wrap_content"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/c17"
+            android:textSize="@dimen/f17"
+            tools:text="新基金将投资开采锂、钴、镍、铜、稀土和石墨等原材料" />
+        <!--android:background="@drawable/news_icon_voice"-->
+        <RelativeLayout
+            android:id="@+id/linear_vioce"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_news_voice_play_bg"
+            >
+
+
+            <View
+                android:id="@+id/downloadProgressId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/customprogress"
+                />
+
+            <ImageView
+                android:id="@+id/image_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d12"
+                android:scaleType="centerCrop"
+                android:src="@drawable/news_icon_voice_3" />
+
+
+            <TextView
+                android:id="@+id/tv_vioce_cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:textColor="@color/c9EB2CD"
+                android:visibility="gone"
+                android:textSize="@dimen/f14"
+                tools:text="0”" />
+            <ImageView
+                android:id="@+id/audio_player_iv_wave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:src="@drawable/dot_video" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/tv_yuan_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:maxLength="11"
+                android:ellipsize="end"
+                android:padding="@dimen/d2"
+                android:textColor="@color/c6A798E"
+                android:textSize="@dimen/f12"
+                 />
+
+            <TextView
+                android:id="@+id/tv_yuan_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/c21"
+                android:textSize="@dimen/f12"
+                tools:text="12分钟前" />
+
+            <ImageView
+                android:id="@+id/image_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="8dp"
+            android:background="@color/c22">
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

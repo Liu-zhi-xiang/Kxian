@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/c0"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <!--左边按钮-->
+    <LinearLayout
+        android:id="@+id/leftLayout"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/nav_button_back"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/f16"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/d5"
+            android:src="@mipmap/icon_g_user" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/tv_data_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/data_nav_button_triangular"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/dataname"
+            android:textColor="@color/cFFFFFFFF"
+            android:textSize="@dimen/f18" />
+    </LinearLayout>
+
+    <!--右边按钮-->
+    <RelativeLayout
+        android:id="@+id/rightLayoutk"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/data_nav_button_chart" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/vTop"
+        layout="@layout/include_spot_day_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+    <!--列表-->
+    <LinearLayout
+        android:id="@+id/llTabTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vTop"
+        android:background="@color/c2A2D4F"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/d5"
+        android:paddingBottom="@dimen/d5">
+        <!--时间-->
+        <TextView
+            android:id="@+id/tvMonthTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center|left"
+            android:paddingLeft="13dp"
+            android:text="@string/txt_month_time"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f13" />
+        <!--报价-->
+        <TextView
+            android:id="@+id/tvMonthPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/d10"
+            android:layout_weight="1.6"
+            android:gravity="center|right"
+            android:text="@string/txt_price"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f13" />
+
+        <!--中间值-->
+        <TextView
+            android:id="@+id/tvMonthCenterValue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:text="@string/txt_center_value"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f13" />
+        <!--涨跌-->
+        <TextView
+            android:id="@+id/tvMonthUpOrDown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/d8"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:text="@string/upDown"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f13" />
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llTabTitle"
+        android:background="@color/c2A2D4F">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvToDay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c2A2D4F"
+            android:visibility="visible" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vTop"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+

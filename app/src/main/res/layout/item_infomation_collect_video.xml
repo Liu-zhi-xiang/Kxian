@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clipChildren="false"
+    android:background="@drawable/item_bg_selector"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/c17"
+            android:textSize="@dimen/f17"
+            tools:text="新基金将投资开采锂、钴、镍、铜、稀土和石墨等原材料" />
+
+        <RelativeLayout
+            android:id="@+id/relative_viode"
+            android:layout_width="match_parent"
+            android:layout_height="198dp"
+            android:layout_marginTop="9dp">
+
+            <ImageView
+                android:id="@+id/image_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/image_start"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/video" />
+
+            <com.gjmetal.app.widget.MyVideoPlay
+                android:id="@+id/player_list_video"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+        </RelativeLayout>
+        <include
+            layout="@layout/layout_information_bottom_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

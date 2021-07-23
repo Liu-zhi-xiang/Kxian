@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSpinerTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d15"
+        android:layout_marginBottom="@dimen/d5"
+        android:text="@string/app_name"
+        android:textColor="@color/c6A798E"
+        android:textSize="@dimen/f11" />
+
+    <com.gjmetal.app.widget.PointGridView
+        android:id="@+id/gvItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="@dimen/d16"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/d10" />
+</LinearLayout>

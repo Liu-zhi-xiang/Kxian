@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d30"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/rlTitleSearch"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/vMarginLeft"
+        android:layout_width="@dimen/d15"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tvSearchCancel"
+        android:layout_toRightOf="@+id/vMarginLeft"
+        android:background="@drawable/shape_et_search_bg"
+        android:layout_marginRight="@dimen/d15"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d10"
+            android:src="@mipmap/ic_navbar_news_search" />
+
+        <com.gjmetal.app.widget.ClearEditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d30"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/d5"
+            android:paddingRight="@dimen/d5"
+            android:textColor="@color/c3"
+            android:textColorHint="@color/c627997"
+            android:textCursorDrawable="@drawable/shape_edit_input_xian"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/f14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSearchCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/d15"
+        android:text="@string/txt_cancel"
+        android:textColor="@color/c9EB2CD"
+        android:textSize="@dimen/f16" />
+</RelativeLayout>

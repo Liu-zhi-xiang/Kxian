@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/llTopToDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/d18"
+        android:layout_marginTop="@dimen/d11"
+        android:layout_marginRight="@dimen/d18"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_spot_contact_bg"
+            android:paddingLeft="@dimen/d2"
+            android:paddingTop="0dp"
+            android:paddingRight="@dimen/d2"
+            android:paddingBottom="0dp"
+            android:textColor="@color/c6A798E"
+            android:text="- -"
+            android:textSize="@dimen/f11" />
+
+        <TextView
+            android:id="@+id/tvContractUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:background="@drawable/shape_spot_contact_bg"
+            android:paddingLeft="@dimen/d2"
+            android:paddingTop="0dp"
+            android:paddingRight="@dimen/d2"
+            android:paddingBottom="0dp"
+            android:text="- -"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f11" />
+
+        <TextView
+            android:id="@+id/tvContractName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:background="@drawable/shape_spot_contact_bg"
+            android:paddingLeft="@dimen/d2"
+            android:paddingTop="0dp"
+            android:paddingRight="@dimen/d2"
+            android:text="- -"
+            android:paddingBottom="0dp"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f11" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llTopToDay"
+        android:layout_marginLeft="@dimen/d18"
+        android:layout_marginTop="@dimen/d3"
+        android:layout_marginRight="@dimen/d15"
+        android:orientation="horizontal">
+
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvLS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.2"
+            android:lines="1"
+            android:padding="@dimen/d3"
+            android:textColor="@color/cffffff"
+            android:textSize="@dimen/f18"
+            autofit:minTextSize="8sp" />
+
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvSorL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d15"
+            android:layout_weight="1.3"
+            android:gravity="right"
+            android:lines="1"
+            android:padding="@dimen/d3"
+            android:textColor="@color/cffffff"
+            android:textSize="@dimen/f18"
+            autofit:minTextSize="8sp" />
+
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvSlValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d15"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:lines="1"
+            android:padding="@dimen/d3"
+            android:textColor="@color/c3EB86A"
+            android:textSize="@dimen/f18"
+            autofit:minTextSize="8sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d5"
+        android:layout_below="@+id/llSecond"
+        android:layout_marginLeft="@dimen/d18"
+        android:layout_marginTop="@dimen/d5"
+        android:layout_marginRight="@dimen/d18"
+        android:layout_marginBottom="@dimen/d5"
+        android:background="@color/c343657" />
+
+    <LinearLayout
+        android:id="@+id/llTimeDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d18"
+        android:layout_marginRight="@dimen/d18"
+        android:orientation="vertical">
+
+        <com.gjmetal.app.widget.MyGridView
+            android:id="@+id/gvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c2A2D4F"
+            android:numColumns="5" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/dialog_null_permission_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tvVipServiceone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="@string/dialog_apply_text_one"
+            android:textColor="@color/c202239"
+            android:textSize="@dimen/f18"
+            />
+        <TextView
+            android:id="@+id/tvVipServicetwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="@string/dialog_apply_text_two"
+            android:textColor="@color/c202239"
+            android:textSize="@dimen/f18"
+            />
+        <TextView
+            android:id="@+id/tvVipServicePhoneOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:clickable="true"
+            android:text="021-65039055"
+            android:textColor="@color/c0076FF"
+            android:textSize="@dimen/f18"
+            />
+        <TextView
+            android:id="@+id/tvVipServicePhonetwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="021-65039077"
+            android:clickable="true"
+            android:textColor="@color/c0076FF"
+            android:textSize="@dimen/f18"
+            />
+        <TextView
+            android:id="@+id/tvVipServicethree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_marginTop="@dimen/d2"
+            android:text=""
+            android:textColor="@color/c202239"
+            android:textSize="@dimen/f12"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginTop="20dp"
+        android:background="@color/cE5E5E5" />
+
+    <LinearLayout
+        android:id="@+id/llHint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_sure_selector"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/txt_cancel"
+            android:textColor="@color/c999999"
+            android:textSize="@dimen/f18" />
+
+        <View
+            android:layout_width="@dimen/line"
+            android:id="@+id/vLIne"
+            android:layout_height="match_parent"
+            android:background="@color/cE5E5E5" />
+
+        <Button
+            android:id="@+id/btnDialogConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_cancel_selector"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/try_to_apply_for_read"
+            android:textColor="@color/c0076FF"
+            android:textSize="@dimen/f18" />
+    </LinearLayout>
+
+</LinearLayout>

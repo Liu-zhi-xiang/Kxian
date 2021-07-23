@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llInformation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg_selector"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/d16"
+    android:paddingTop="@dimen/d20"
+    android:paddingRight="@dimen/d16">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/c202239"
+        android:textSize="@dimen/f16"
+        tools:text="新基金将投资开采锂、钴、镍、铜、稀土和石墨等原材料" />
+
+    <RelativeLayout
+        android:id="@+id/linear_vioce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d30"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_paly_stop"
+            android:layout_width="@dimen/d30"
+            android:layout_height="@dimen/d30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d13"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_news_voice_paly" />
+
+        <SeekBar
+            android:id="@+id/sb_play_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/d12"
+            android:layout_marginTop="@dimen/d12"
+            android:layout_marginRight="@dimen/d4"
+            android:layout_toRightOf="@id/iv_paly_stop"
+            android:max="100"
+            android:maxHeight="@dimen/d6"
+            android:minHeight="@dimen/d6"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:progress="60"
+            android:progressDrawable="@drawable/play_progress_bg"
+            android:thumb="@mipmap/ic_news_voice_point"
+            android:thumbOffset="0dp" />
+
+        <TextView
+            android:id="@+id/tv_play_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d14"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/d4"
+            android:text="00:30"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f12" />
+
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_information_bottom_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

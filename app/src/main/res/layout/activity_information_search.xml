@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cFFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlSearchTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/d15"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_search_histroy"
+            android:textColor="@color/c202239"
+            android:textSize="@dimen/f14" />
+
+        <TextView
+            android:id="@+id/tvClearHistorySearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/txt_clear_search_histroy"
+            android:textColor="@color/c4A90E2"
+            android:textSize="@dimen/f14" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tlSearchHistory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvClearHistorySearch"
+            android:layout_marginTop="@dimen/d20"
+            zhy:max_select="-1" />
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+      android:background="@color/cffffff">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlSearchTop"
+            android:background="@color/cF5F5F5"
+            android:fadeScrollbars="true" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlSearchTop"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/d150"
+        android:visibility="gone">
+
+    </com.gjmetal.app.widget.EmptyView>
+</RelativeLayout>

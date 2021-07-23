@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/item_my_bg_selector"
+    android:gravity="center">
+    <RelativeLayout
+        android:id="@+id/rlMenu"
+        android:layout_width="@dimen/d60"
+        android:layout_height="@dimen/d90"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+           />
+
+        <TextView
+            android:id="@+id/tvNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/d25"
+            android:background="@drawable/red_cir"
+            android:paddingLeft="@dimen/d4"
+            android:paddingTop="@dimen/d1"
+            android:paddingRight="@dimen/d4"
+            android:paddingBottom="@dimen/d1"
+            android:layout_marginLeft="@dimen/d30"
+            android:textColor="@color/cffffff"
+            android:textSize="@dimen/f12"
+            android:textStyle="bold"
+
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/rlMenu"
+        android:orientation="vertical">
+
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvMenuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c202239"
+            android:textSize="@dimen/f18"
+            autofit:minTextSize="@dimen/f8" />
+
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d5"
+            android:textColor="@color/c6A798E"
+            autofit:minTextSize="@dimen/f8"
+            android:textSize="@dimen/f12" />
+    </LinearLayout>
+</RelativeLayout>

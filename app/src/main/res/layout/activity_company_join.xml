@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cF5F5F5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c3"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/d10"
+        android:paddingTop="@dimen/d15"
+        android:paddingRight="@dimen/d10"
+        android:paddingBottom="@dimen/d15">
+
+        <TextView
+            style="@style/company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_input_applycode" />
+
+        <com.gjmetal.app.widget.ClearEditText
+            android:id="@+id/etApplyCode"
+            style="@style/login_et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/d40"
+            android:paddingRight="@dimen/d10"
+            android:textColor="@color/c999999"
+            android:gravity="right"
+            android:inputType="number"
+            android:maxLength="6" />
+    </LinearLayout>
+
+</LinearLayout>

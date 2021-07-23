@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custompb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:id="@+id/rlVersionPer"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="@dimen/d280"
+        android:layout_height="@dimen/d295"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_version_update_head"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/d20">
+
+            <TextView
+                android:id="@+id/tvDialogTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d40"
+                android:gravity="center_vertical|center"
+                android:text="@string/txt_find_new_version"
+                android:textColor="@color/cffffff"
+                android:textSize="@dimen/f30"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvVersionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cffffff"
+                android:textSize="@dimen/f14" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/version_dialog_bg"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:layout_above="@+id/llHint"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d20"
+                android:layout_marginTop="@dimen/d20"
+                android:layout_marginRight="@dimen/d20"
+                android:scrollbarThumbVertical="@color/c999999"
+                android:layout_marginBottom="@dimen/d10"
+                android:scrollbarSize="@dimen/d2"
+                android:background="@color/cffffff"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDialogContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/c999999"
+                    android:textSize="@dimen/f14" />
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/llHint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/rlProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/d10"
+                    android:visibility="gone">
+
+                    <com.gjmetal.app.widget.NumberProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d20"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_marginRight="@dimen/d10"
+                        android:visibility="visible"
+                        custompb:my_progress_current="0"
+                        custompb:my_progress_max="100"
+                        custompb:my_progress_reached_bar_height="3dp"
+                        custompb:my_progress_reached_color="@color/c4F5490"
+                        custompb:my_progress_text_color="@color/c4F5490"
+                        custompb:my_progress_text_offset="2dp"
+                        custompb:my_progress_text_size="14sp"
+                        custompb:my_progress_text_visibility="visible"
+                        custompb:my_progress_unreached_bar_height="3dp"
+                        custompb:my_progress_unreached_color="@color/cE7EDF5" />
+
+                    <TextView
+                        android:id="@+id/tvTryAgain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:gravity="center_vertical"
+                        android:text="@string/again_try"
+                        android:textColor="@color/c1"
+                        android:textSize="@dimen/f14"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvOtherDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d10"
+                        android:text="@string/txt_other_download"
+                        android:textColor="@color/c1"
+                        android:textSize="@dimen/f14"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnDialogConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d10"
+                    android:background="@drawable/coner_update_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/d10"
+                    android:text="@string/txt_must_update"
+                    android:textColor="@color/cffffff"
+                    android:textSize="@dimen/f16"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/llTop"
+        android:layout_above="@+id/llTop"
+        android:layout_marginLeft="@dimen/d250"
+        android:background="@mipmap/nav_button_shut"
+        android:visibility="gone" />
+</RelativeLayout>

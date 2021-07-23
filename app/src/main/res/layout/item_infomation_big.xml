@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/item_bg_selector"
+    android:paddingLeft="@dimen/d16"
+    android:paddingRight="@dimen/d16"
+    android:id="@+id/llInformation"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/c202239"
+        android:textSize="@dimen/f16"
+        tools:text="新基金将投资开采锂、钴、镍、铜、稀土和石墨等原材料" />
+
+
+    <ImageView
+        android:id="@+id/image_main"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_marginTop="9dp"
+        android:scaleType="centerCrop" />
+
+    <include
+        layout="@layout/layout_information_bottom_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

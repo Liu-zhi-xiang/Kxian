@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jwenfeng.pulltorefresh:library:1.0.3@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3d7cac4682ce09bcb205f379ecbe57c3/library-1.0.3/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3d7cac4682ce09bcb205f379ecbe57c3/library-1.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3d7cac4682ce09bcb205f379ecbe57c3/library-1.0.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3d7cac4682ce09bcb205f379ecbe57c3/library-1.0.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jwenfeng.pulltorefresh/library/1.0.3/b0fd85ba853a77c1df5211e22d7ed50da3dfab28/library-1.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jwenfeng.pulltorefresh/library/1.0.3/68c0abd6e235729776d02bd9a0f5f1f6893c26d7/library-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

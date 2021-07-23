@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d230"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+    <!--值-->
+    <LinearLayout
+        android:id="@+id/llSoptItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d2"
+        android:background="@drawable/spot_item_ripper_baojia"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/d10"
+        android:paddingTop="@dimen/d10"
+        android:paddingRight="@dimen/d10"
+        android:paddingBottom="@dimen/d10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFromSpotStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:maxLines="1"
+                android:textColor="@color/cE7EDF5"
+                android:textSize="@dimen/f16" />
+
+            <TextView
+                android:id="@+id/tvTimeAndData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d2"
+                android:background="@drawable/shape_spot_contact_bg"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/d2"
+                android:paddingRight="@dimen/d2"
+                android:textColor="@color/c6A798E"
+                android:textSize="@dimen/f10" />
+        </LinearLayout>
+
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvSpotStockNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lines="1"
+            app:minTextSize="@dimen/d4"
+            android:layout_gravity="bottom"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f14" />
+
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvSpotStockIncreaseOrDecrease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:lines="1"
+            app:minTextSize="@dimen/d4"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f14" />
+    </LinearLayout>
+</LinearLayout>

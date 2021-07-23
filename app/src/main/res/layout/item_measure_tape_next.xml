@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d60"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:paddingLeft="@dimen/d12"
+    android:paddingRight="@dimen/d12"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvMeasureName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/c9EB2CD"
+        autofit:minTextSize="@dimen/f8"
+        android:textSize="@dimen/f14" />
+
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvMeasureValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/d4"
+        android:gravity="left"
+        android:maxLines="1"
+        android:textColor="@color/cF27A68"
+        android:textSize="@dimen/f14"
+        autofit:minTextSize="@dimen/f8" />
+</LinearLayout>
+</LinearLayout>

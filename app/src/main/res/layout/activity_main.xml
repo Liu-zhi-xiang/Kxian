@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/vXian"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_above="@+id/rgMain"
+        android:background="@color/c383B5C" />
+
+    <RadioGroup
+        android:id="@+id/rgMain"
+        style="@style/main_navi_radiogroup"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c2A2D4F">
+
+        <RadioButton
+            android:id="@+id/rbMarket"
+            style="@style/main_navi_radiobutton"
+            android:drawableTop="@drawable/menu_item_market"
+            android:text="@string/menu_market" />
+
+        <RadioButton
+            android:id="@+id/rbHomeSpot"
+            style="@style/main_navi_radiobutton"
+            android:drawableTop="@drawable/menu_item_spot"
+            android:text="@string/spot_goods" />
+
+        <RadioButton
+            android:id="@+id/rbDate"
+            style="@style/main_navi_radiobutton"
+            android:drawableTop="@drawable/menu_item_helper"
+            android:text="@string/menu_helper" />
+
+        <RadioButton
+            android:id="@+id/rbInformation"
+            style="@style/main_navi_radiobutton"
+            android:drawableTop="@drawable/menu_item_information"
+            android:text="@string/menu_information" />
+
+        <RadioButton
+            android:id="@+id/rbData"
+            style="@style/main_navi_radiobutton"
+            android:drawableTop="@drawable/menu_item_data"
+            android:text="@string/menu_main_flash" />
+    </RadioGroup>
+
+</LinearLayout>

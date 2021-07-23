@@ -1,0 +1,45 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "conf.gradle"
+
+buildscript {
+    repositories {
+        google()
+        //shareSdk 服务器不稳定，这地址需优化放前面
+        maven { url "http://mvn.mob.com/android" }
+//        maven {  url 'http://repos.mob.com/repository/jcenter/'}
+//        jcenter()
+        maven { url "http://jcenter.bintray.com"}
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        //友盟
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url 'https://maven.google.com'}
+        maven{url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+//        classpath 'com.meituan.android.walle:plugin:1.1.6'
+        classpath 'com.mob.sdk:MobSDK-Impl:2019.1109.1045'
+//        classpath 'com.mob.sdk:MobSDK:+'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "http://jcenter.bintray.com"}
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.google.com'}
+
+        //友盟
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven{url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        mavenCentral()
+    }
+}
+
+
+

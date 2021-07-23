@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flCounter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/d28"
+    android:background="@color/c2A2D4F"
+    tools:context=".ui.alphametal.calculator.CounterPeriodFragment">
+    <com.gjmetal.app.widget.ApplyReadView
+        android:id="@+id/vPermission"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlVipInfo"
+        android:visibility="gone" />
+    <View
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d180"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c2A2D4F"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/svCounter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomView"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/myLinearLayoutView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c2A2D4F"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d35"
+                android:background="@color/c202239"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/d4"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d8"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:background="@drawable/shape_aplemetal_counter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d3"
+                    android:gravity="center_vertical"
+                    android:text="标的详情"
+                    android:textColor="@color/cE7EDF5"
+                    android:textSize="@dimen/f14" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d70"
+                android:background="@color/c2A2D4F"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d20"
+                    android:layout_marginLeft="@dimen/d15"
+                    android:layout_marginTop="@dimen/d8"
+                    android:gravity="center_vertical"
+                    android:text="方向"
+                    android:textColor="@color/cD4975C"
+                    android:textSize="@dimen/f14" />
+
+                <RadioGroup
+                    android:id="@+id/counterRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginTop="@dimen/d12"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/selecter_aplemetal_rb"
+                        android:drawablePadding="@dimen/d6"
+                        android:text="看涨"
+                        android:textColor="@color/cE7EDF5"
+                        android:textSize="@dimen/f16" />
+
+                    <RadioButton
+                        android:id="@+id/rbDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d40"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selecter_aplemetal_rb"
+                        android:drawablePadding="@dimen/d6"
+                        android:text="看跌"
+                        android:textColor="@color/cE7EDF5"
+                        android:textSize="@dimen/f16" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:background="@color/c10ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c2A2D4F"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d20"
+                    android:layout_marginLeft="@dimen/d15"
+                    android:layout_marginTop="@dimen/d8"
+                    android:gravity="center_vertical"
+                    android:text="合约"
+                    android:textColor="@color/cD4975C"
+                    android:textSize="@dimen/f14" />
+
+                <RelativeLayout
+                    android:id="@+id/llSelecterContract"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d30"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvContranct"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:gravity="center_vertical"
+                        android:hint="请选择合约"
+                        android:layout_toLeftOf="@id/ivRight1"
+                        android:textColor="@color/cE7EDF5"
+                        android:textColorHint="@color/c6A798E"
+                        android:textSize="@dimen/f16" />
+
+                    <ImageView
+                        android:id="@+id/ivRight1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/d19"
+                        android:background="@mipmap/lists_icon_right" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:background="@color/c10ffffff" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c2A2D4F"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d20"
+                    android:layout_marginLeft="@dimen/d15"
+                    android:layout_marginTop="@dimen/d8"
+                    android:gravity="center_vertical"
+                    android:text="行权价格"
+                    android:textColor="@color/cD4975C"
+                    android:textSize="@dimen/f14" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rlSelecterPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d30"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginBottom="@dimen/d8">
+
+                    <TextView
+                        android:id="@+id/tvPric"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:gravity="center_vertical"
+                        android:layout_toLeftOf="@id/ivRight2"
+                        android:hint="请选择行权价格"
+                        android:textColor="@color/cE7EDF5"
+                        android:textColorHint="@color/c6A798E"
+                        android:textSize="@dimen/f16" />
+
+                    <ImageView
+                        android:id="@+id/ivRight2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/d19"
+                        android:background="@mipmap/lists_icon_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d35"
+                android:background="@color/c202239"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/d4"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d8"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:background="@drawable/shape_aplemetal_counter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d3"
+                    android:gravity="center_vertical"
+                    android:text="利率"
+                    android:textColor="@color/cE7EDF5"
+                    android:textSize="@dimen/f14" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c2A2D4F"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNameShibor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d20"
+                    android:layout_marginLeft="@dimen/d15"
+                    android:layout_marginTop="@dimen/d8"
+                    android:gravity="center_vertical"
+                    android:text="- -"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cD4975C"
+                    android:textSize="@dimen/f14" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d30"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvValueShibor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:gravity="center_vertical"
+                        android:text="- -"
+                        android:textColor="@color/cE7EDF5"
+                        android:textColorHint="@color/c6A798E"
+                        android:textSize="@dimen/f16" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:background="@color/c10ffffff" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c2A2D4F"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d20"
+                    android:layout_marginLeft="@dimen/d15"
+                    android:layout_marginTop="@dimen/d8"
+                    android:gravity="center_vertical"
+                    android:text="浮动"
+                    android:textColor="@color/cD4975C"
+                    android:textSize="@dimen/f14" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d30"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginBottom="@dimen/d8">
+
+                    <EditText
+                        android:id="@+id/etRelocateValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_marginRight="@dimen/d80"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="@string/key_board_add_sub_mark"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/cE7EDF5"
+                        android:textColorHint="@color/c6A798E"
+                        style="@style/input_style"
+                        android:textSize="@dimen/f16" />
+
+                    <TextView
+                        android:id="@+id/tvRelocateBp"
+                        android:layout_width="@dimen/d20"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/d16"
+                        android:gravity="center_vertical"
+                        android:text="bp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/cE7EDF5"
+                        android:textSize="@dimen/f16" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:background="@color/c10ffffff" />
+
+
+            <Button
+                android:id="@+id/btnComputerValue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d45"
+                android:layout_marginBottom="@dimen/d40"
+                android:layout_marginTop="@dimen/d20"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_marginLeft="@dimen/d20"
+                android:background="@drawable/shape_aplemetel_computer_btn"
+                android:text="计算"
+                android:textColor="@color/cE7EDF5"
+                android:textSize="@dimen/f16" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

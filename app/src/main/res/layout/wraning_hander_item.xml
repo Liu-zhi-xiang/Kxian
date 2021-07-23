@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/c10FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tvWarnHander"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d37"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/d16"
+        android:text="沪铜1808"
+        android:textColor="@color/cD4975C"
+        android:textSize="@dimen/f18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d6"
+        android:layout_marginRight="@dimen/d16"
+        android:layout_marginLeft="@dimen/d16"
+        android:background="@color/c10FFFFFF"/>
+
+
+</LinearLayout>

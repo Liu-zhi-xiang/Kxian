@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cff2a2d4f"
+    android:layout_height="72dp">
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:id="@+id/llLemThree"
+        android:layout_below="@+id/vseven"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLmeTitleThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:drawableLeft="@mipmap/ic_global_line"
+            android:drawablePadding="@dimen/d6"
+            android:text="- -"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f16" />
+
+        <TextView
+            android:id="@+id/tvLmeTimeThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:gravity="left"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f13" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/llLemThree"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d28"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/d8"
+            android:text="@string/time"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f13" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="@string/txt_price_two"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f13" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/d8"
+            android:text="@string/txt_price_3m_spread"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f13" />
+    </LinearLayout>
+</LinearLayout>

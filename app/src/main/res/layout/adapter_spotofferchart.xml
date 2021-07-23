@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llChooseTime"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d28"
+    android:background="@color/c2A2D4F"
+    android:gravity="center|center_horizontal"
+    android:layout_gravity="center"
+    android:paddingRight="@dimen/d20">
+
+    <ImageView
+        android:id="@+id/ivChooseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/spotchoosetimeno" />
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvChooseDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d4"
+        android:lines="1"
+        autofit:minTextSize="@dimen/f8"
+        android:gravity="center"
+        android:text="09:30"
+        android:textColor="@color/cE7EDF5"
+        android:textSize="@dimen/f14" />
+</LinearLayout>

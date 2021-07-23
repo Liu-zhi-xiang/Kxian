@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cFFFFFF"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_commit"
+        android:fillViewport="true"
+        android:background="@android:color/transparent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/d16"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/d40">
+            <TextView
+                android:background="@android:color/transparent"
+                android:id="@+id/tvYesChose"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/check_tabs_my"
+                android:textColor="@color/c202239"
+                android:textSize="@dimen/f14" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drag"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f14"
+            />
+    </LinearLayout>
+            <com.gjmetal.app.widget.flowlayout.FlowDragLayout
+                android:id="@+id/flow_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="@dimen/d4"
+                android:layout_marginLeft="@dimen/d14"
+                android:layout_marginRight="@dimen/d14"
+                android:layout_marginBottom="@dimen/d10"
+                 />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:background="@color/cE7EDF5" />
+
+            <TextView
+                android:id="@+id/tvNoChose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d16"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/uncheck_tabs_click"
+                android:textColor="@color/c202239"
+                android:textSize="@dimen/f14" />
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/flow_unuse"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="@dimen/d15"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                zhy:max_select="-1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_finish_selector"
+        android:gravity="center"
+        android:text="@string/over"
+        android:textColor="@color/cE7EDF5"
+        android:textSize="@dimen/f16"
+        android:visibility="gone">
+
+    </TextView>
+
+</RelativeLayout>

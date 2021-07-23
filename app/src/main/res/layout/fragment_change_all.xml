@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d35"
+        android:layout_alignParentTop="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/cFF333556"
+        android:layout_below="@+id/rvTab"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/d2"
+        android:layout_above="@+id/btnAddMyChange"
+        android:overScrollMode="never"
+        android:layout_below="@+id/vLine"
+        android:scrollbars="none">
+    </android.support.v7.widget.RecyclerView>
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/vLine"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/btnAddMyChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_finish_selector"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/txt_add_to_my_change"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/f16"
+        android:visibility="visible" />
+</RelativeLayout>

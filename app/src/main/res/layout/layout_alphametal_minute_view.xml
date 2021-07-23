@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--横屏显示信息-->
+    <com.gjmetal.app.widget.kline.MeasureLeftHorizontalView
+        android:id="@+id/viewMinuteLeftMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/lineMinuteView"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/cFF353858"
+        android:visibility="gone" />
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/minuteEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <com.star.kchart.minute.MinuteMainView
+        android:id="@+id/minuteChartView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

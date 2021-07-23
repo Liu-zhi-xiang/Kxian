@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cF5F5F5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/llCompanyAdd"
+        style="@style/my_layout_item"
+        >
+
+        <TextView
+            android:id="@+id/tvCompanyAdd"
+            style="@style/company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_company_add_person" />
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/lists_icon_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llJoin"
+        android:layout_marginTop="1dp"
+        style="@style/my_layout_item">
+
+        <TextView
+            android:id="@+id/tvJoinCompany"
+            style="@style/company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/company_join" />
+
+        <ImageView
+            android:id="@+id/ivJoinRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/lists_icon_right" />
+    </RelativeLayout>
+</LinearLayout>

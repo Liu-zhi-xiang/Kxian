@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/d10"
+        android:text="@string/txt_vip_service"
+        android:textColor="@color/c202239"
+        android:textSize="@dimen/f14"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTop"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:layout_marginBottom="@dimen/d10"
+        android:background="@drawable/coner_vip_nor_bg"
+        android:elevation="0.5dp"
+        android:padding="@dimen/d10"
+        android:translationZ="0.5dp">
+
+        <TextView
+            android:id="@+id/tvServiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- -"
+            android:textColor="@color/c202239"
+            android:textSize="@dimen/f16"
+            android:textStyle="bold" />
+        <!--会员-->
+        <TextView
+            android:id="@+id/tvServiceHasTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvServiceName"
+            android:layout_marginTop="@dimen/d5"
+            android:background="@drawable/coner_cd4975c_nor_bg"
+            android:gravity="center_vertical"
+            android:padding="@dimen/d2"
+            android:text="@string/app_name"
+            android:textColor="@color/cD4975C"
+            android:textSize="@dimen/f11"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvServiceTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvServiceHasTime"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f10"
+            android:visibility="gone" />
+
+
+        <!--已过期-->
+        <TextView
+            android:id="@+id/tvServiceNoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvServiceName"
+            android:layout_marginTop="@dimen/d5"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="@dimen/d2"
+            android:text="@string/txt_no_service_time"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCallService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/coner_cd4975c_call_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/d10"
+            android:paddingTop="@dimen/d3"
+            android:paddingRight="@dimen/d10"
+            android:paddingBottom="@dimen/d3"
+            android:text="@string/txt_callservice"
+            android:textColor="@color/cffffff"
+            android:textSize="@dimen/f16"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

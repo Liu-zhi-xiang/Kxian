@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d46"
+    android:layout_marginBottom="@dimen/d2"
+    android:paddingRight="@dimen/d10"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|left"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/d8"
+        android:orientation="vertical">
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvOtcGoods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:gravity="left"
+            android:layout_gravity="center_vertical"
+            android:text="名称铀铀中中"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f16"
+            autofit:minTextSize="4sp" />
+
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvObject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:gravity="left"
+            android:layout_gravity="center_vertical"
+            android:text="Cu1904"
+            android:visibility="gone"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f12"
+            autofit:minTextSize="4sp" />
+    </LinearLayout>
+
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:layout_weight="1.5"
+        android:layout_gravity="center_vertical"
+        android:lines="1"
+        android:text="9904"
+        android:textColor="@color/cE7EDF5"
+        android:textSize="@dimen/f16"
+        autofit:minTextSize="4sp" />
+</LinearLayout>

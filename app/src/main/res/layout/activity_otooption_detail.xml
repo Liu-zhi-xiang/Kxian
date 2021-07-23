@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/c0DFFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:orientation="horizontal"
+       >
+
+        <TextView
+            android:id="@+id/tvContactName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/d8"
+            android:text="- -"
+            android:gravity="center_vertical"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f18" />
+        <View
+            android:id="@+id/vTopLine"
+            android:layout_width="@dimen/d1"
+            android:layout_height="match_parent"
+            android:background="@color/c0DFFFFFF" />
+        <TextView
+            android:id="@+id/tvContactDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/d15"
+            android:gravity="center_vertical"
+            android:text="- -"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/c0DFFFFFF" />
+
+    <com.gjmetal.app.widget.BaseWebView
+        android:id="@+id/wvOtc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c2A2D4F"/>
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

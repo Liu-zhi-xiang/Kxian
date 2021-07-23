@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/d5"
+        android:layout_marginBottom="@dimen/d5"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivLandScapeBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d10"
+            android:background="@mipmap/nav_button_back" />
+
+        <TextView
+            android:id="@+id/tvContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f16" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/lineName"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cFF353858"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--横屏显示信息-->
+        <com.gjmetal.app.widget.kline.MarketLeftHorizontalView
+            android:id="@+id/viewMinuteLeftMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/lineMinuteView"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/cFF353858"
+            android:visibility="gone" />
+
+        <com.star.kchart.rate.RateView
+            android:id="@+id/rateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/c2A2D4F" />
+
+        <com.gjmetal.app.widget.EmptyView
+            android:id="@+id/exchangeEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</LinearLayout>

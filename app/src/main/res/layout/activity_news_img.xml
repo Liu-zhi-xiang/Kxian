@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/d6"
+            android:layout_width="@dimen/d44"
+            android:layout_height="@dimen/d44"
+            android:gravity="center"
+            android:id="@+id/llBack"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_global_pic_back" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d1"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvImgNub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d10"
+            android:gravity="right"
+            android:text="1/1"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDownload"
+        android:layout_width="@dimen/d36"
+        android:layout_height="@dimen/d36"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/d20"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/d44"
+        android:background="@drawable/coner_c000000_bg"
+        >
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_global_pic_download" />
+    </LinearLayout>
+</RelativeLayout>

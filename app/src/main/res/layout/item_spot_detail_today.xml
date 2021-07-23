@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:background="@color/c2A2D4F"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/d6"
+        android:paddingBottom="@dimen/d6">
+        <!--时间-->
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvMonthTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center|left"
+            android:paddingLeft="13dp"
+            android:lines="1"
+            android:text="@string/txt_month_time"
+            android:textColor="@color/cE7EDF5"
+            autofit:minTextSize="@dimen/f8"
+            android:textSize="@dimen/f16" />
+        <!--报价-->
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvMonthPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center|right"
+            android:text="@string/txt_price"
+            android:textColor="@color/cE7EDF5"
+            android:lines="1"
+            android:layout_marginRight="@dimen/d10"
+            autofit:minTextSize="@dimen/f8"
+            android:textSize="@dimen/f16" />
+
+        <!--中间值-->
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvMonthCenterValue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:lines="1"
+            android:text="@string/txt_center_value"
+            android:textColor="@color/cE7EDF5"
+            autofit:minTextSize="@dimen/f8"
+            android:textSize="@dimen/f16" />
+        <!--涨跌-->
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvMonthUpOrDown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/d8"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:lines="1"
+            android:textColor="@color/cE7EDF5"
+            autofit:minTextSize="@dimen/f8"
+            android:textSize="@dimen/f16" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d2"
+        android:background="@color/c2A2D4F"/>
+</LinearLayout>

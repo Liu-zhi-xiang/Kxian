@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vPEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d230"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llSpotBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c1E3A65"
+        android:orientation="vertical">
+        <!--合约名-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTimeSpotItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:background="@drawable/shape_spot_contact_bg"
+                android:paddingLeft="@dimen/d2"
+                android:paddingRight="@dimen/d2"
+                android:textColor="@color/c6A798E"
+                android:textSize="@dimen/f11" />
+            <TextView
+                android:id="@+id/tvSpotUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d5"
+                android:background="@drawable/shape_spot_contact_bg"
+                android:paddingLeft="@dimen/d2"
+                android:paddingRight="@dimen/d2"
+                android:textColor="@color/c6A798E"
+                android:textSize="@dimen/f11"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/tvSpotContactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d5"
+                android:background="@drawable/shape_spot_contact_bg"
+                android:paddingLeft="@dimen/d2"
+                android:paddingRight="@dimen/d2"
+                android:textColor="@color/c6A798E"
+                android:textSize="@dimen/f11"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameSpotItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingLeft="@dimen/d10"
+                android:paddingRight="@dimen/d10"
+                android:textColor="@color/cE7EDF5"
+                android:textSize="@dimen/f16" />
+
+            <LinearLayout
+                android:id="@+id/llExpand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/d10"
+                android:paddingRight="@dimen/d10">
+
+                <com.gjmetal.app.widget.autoText.AutofitTextView
+                    android:id="@+id/tvHeightAndLowPriceSpotItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.8"
+                    android:layout_gravity="left|center_vertical"
+                    android:lines="1"
+                    app:minTextSize="@dimen/d4"
+                    android:text="- -"
+                    android:textColor="@color/cE7EDF5"
+                    android:textSize="@dimen/f16" />
+
+                <com.gjmetal.app.widget.autoText.AutofitTextView
+                    android:id="@+id/tvAveragepriceSpotItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_gravity="right"
+                    android:lines="1"
+                    app:minTextSize="@dimen/d4"
+                    android:text="- -"
+                    android:textColor="@color/cE7EDF5"
+                    android:textSize="@dimen/f16" />
+
+                <com.gjmetal.app.widget.autoText.AutofitTextView
+                    android:id="@+id/tvUpanddownSpotItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:lines="1"
+                    app:minTextSize="@dimen/d4"
+                    android:layout_weight="1"
+                    android:text="- -"
+                    android:textColor="@color/cE7EDF5"
+                    android:textSize="@dimen/f16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lltSpotQuotation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c2A2D4F"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/d40"
+                android:paddingLeft="@dimen/d10"
+                android:paddingRight="@dimen/d10">
+
+                <TextView
+                    android:id="@+id/tvVipRead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_vip_volume"
+                    android:textColor="@color/cD4975C"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="@dimen/d10"
+                    android:paddingBottom="@dimen/d10"
+                    android:textSize="@dimen/f11"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/tvTitleTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="走势图"
+                    android:textColor="@color/c6A798E"
+                    android:textSize="@dimen/f13"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/c6A798E"
+                    android:textSize="@dimen/f13"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d15"
+                    android:layout_toRightOf="@+id/tvDate"
+                    android:text="价格:- -"
+                    android:textColor="@color/cFFFFFF"
+                    android:textSize="@dimen/f13"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvNameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d15"
+                    android:layout_toRightOf="@+id/tvPrice"
+                    android:text=""
+                    android:textColor="@color/cFFFFFF"
+                    android:textSize="@dimen/f13"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/txt_more"
+                    android:textColor="@color/c9EB2CD"
+                    android:visibility="gone"
+                    android:textSize="@dimen/f14" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/d10"
+                android:paddingRight="@dimen/d10">
+
+
+                <com.gjmetal.app.widget.kline.SpotPriceView
+                    android:id="@+id/spotPriceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d220"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/d2" />
+
+                <com.gjmetal.app.widget.EmptyView
+                    android:id="@+id/vEmpty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/d15"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivLoad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/loading_anim"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d2"
+            android:background="@color/c2A2D4F" />
+    </LinearLayout>
+</LinearLayout>

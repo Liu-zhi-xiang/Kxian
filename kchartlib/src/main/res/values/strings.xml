@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KChartLib</string>
+    <string name="txt_recent_quotation">最新价</string>
+</resources>

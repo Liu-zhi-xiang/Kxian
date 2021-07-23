@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--密码登录-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_input_nor"
+        android:paddingRight="@dimen/d10"
+        android:orientation="horizontal">
+
+        <com.gjmetal.app.widget.ClearEditText
+            android:id="@+id/etPsw"
+            style="@style/login_et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/vPsw"
+            android:background="@color/transparent"
+            android:hint="@string/txt_input_psw"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:minHeight="@dimen/d50"
+             />
+
+        <CheckBox
+            android:id="@+id/vPsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/cb_show_psw_selector"
+            android:checked="false" />
+    </RelativeLayout>
+
+
+</LinearLayout>

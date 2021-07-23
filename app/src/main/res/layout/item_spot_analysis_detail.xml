@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c2A2D4F"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/d8"
+    android:paddingBottom="@dimen/d3">
+
+    <View
+        android:id="@+id/vNowProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d13"
+        android:layout_toRightOf="@+id/tvName"
+        android:background="@color/c4F5490"
+        android:layout_marginTop="@dimen/d2"
+        android:paddingRight="@dimen/d60" />
+
+    <View
+        android:id="@+id/vRight"
+        android:layout_width="@dimen/d60"
+        android:layout_height="@dimen/d20"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/vProgressSub"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d13"
+        android:layout_alignTop="@+id/vNowProgress"
+        android:layout_toRightOf="@+id/vNowProgress"
+        android:background="@color/c35CB6B"
+        android:visibility="visible" />
+    <!--减-->
+    <View
+        android:id="@+id/vProgressAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d13"
+        android:layout_alignTop="@+id/vNowProgress"
+        android:layout_alignRight="@+id/vNowProgress"
+        android:layout_marginLeft="@dimen/d55"
+        android:background="@color/cFF5252"
+        android:visibility="gone" />
+    <!--加-->
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvName"
+        android:layout_width="@dimen/d55"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_alignParentTop="true"
+        android:text="@string/app_name"
+        android:textColor="@color/cffffff"
+        android:textSize="@dimen/d12"
+        app:minTextSize="@dimen/d6" />
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvProgressAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/vNowProgress"
+        android:gravity="left|center_vertical"
+        android:layout_alignTop="@+id/vNowProgress"
+        android:layout_alignBottom="@id/vNowProgress"
+        android:maxLines="1"
+        android:minHeight="@dimen/d15"
+        android:text="90"
+        android:textColor="@color/cffffff"
+        android:textSize="@dimen/f11"
+        app:minTextSize="@dimen/f1" />
+
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvProgressAddValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vNowProgress"
+        android:layout_alignRight="@+id/vNowProgress"
+        android:drawableRight="@mipmap/ic_chart_dashed"
+        android:drawablePadding="@dimen/d1"
+        android:gravity="right"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:minWidth="@dimen/d80"
+        android:minHeight="@dimen/d15"
+        android:text="0"
+        android:textColor="@color/cffffff"
+        android:textSize="@dimen/d11"
+        android:visibility="visible"
+        app:minTextSize="@dimen/f1" />
+</RelativeLayout>

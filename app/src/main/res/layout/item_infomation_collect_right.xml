@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg_selector"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/image_right"
+                android:layout_alignBottom="@+id/image_right"
+                android:layout_toLeftOf="@+id/image_right"
+                android:ellipsize="end"
+                android:gravity="top|left"
+                android:maxLines="3"
+                android:paddingRight="@dimen/d10"
+                android:textColor="@color/c17"
+                android:textSize="@dimen/f17" />
+
+            <ImageView
+                android:id="@+id/image_right"
+                android:layout_width="130dp"
+                android:layout_height="82dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/layout_information_bottom_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

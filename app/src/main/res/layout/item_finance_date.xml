@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/d1"
+    android:background="@color/cFFFFFF"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d12"
+        android:paddingRight="@dimen/d12">
+
+        <TextView
+            android:id="@+id/tvFinanceTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f11" />
+
+        <LinearLayout
+            android:id="@+id/llScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/d3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivStar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_alphametal_tab_nor" />
+
+            <ImageView
+                android:id="@+id/ivStar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d5" />
+
+            <ImageView
+                android:id="@+id/ivStar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d5" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingRight="@dimen/d7"
+        android:paddingBottom="@dimen/d5">
+
+        <View
+            android:id="@+id/vXian"
+            android:layout_width="@dimen/d1"
+            android:layout_height="@dimen/d28"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/d11"
+            android:layout_marginBottom="@dimen/d11"
+            android:background="@color/cE7EDF5" />
+
+        <TextView
+            android:id="@+id/tvFinanceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_marginTop="@dimen/d8"
+            android:layout_toRightOf="@+id/vXian"
+            android:textColor="@color/c1E222F"
+            android:textSize="@dimen/f14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFinanceTitle"
+            android:layout_alignLeft="@+id/tvFinanceTitle"
+            android:layout_marginTop="@dimen/d5"
+            android:orientation="horizontal">
+            <!--今值-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today_value"
+                    android:textColor="@color/c6A798E"
+                    android:textSize="@dimen/f11" />
+
+                <TextView
+                    android:id="@+id/tvTodayValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c202239"
+                    android:layout_marginLeft="@dimen/d3"
+                    android:textSize="@dimen/f12" />
+            </LinearLayout>
+
+
+            <!--预值-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/future_value"
+                    android:textColor="@color/c6A798E"
+                    android:textSize="@dimen/f11" />
+
+                <TextView
+                    android:id="@+id/tvPreValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d3"
+                    android:textColor="@color/c202239"
+                    android:textSize="@dimen/f12" />
+            </LinearLayout>
+
+            <!--前值-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/before_value"
+                    android:textColor="@color/c6A798E"
+                    android:textSize="@dimen/f11" />
+
+                <TextView
+                    android:id="@+id/tvBeforeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c202239"
+                    android:layout_marginLeft="@dimen/d3"
+                    android:textSize="@dimen/f12"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

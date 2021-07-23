@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context=".ui.alphametal.calculator.CounterFragment">
+
+    <com.gjmetal.app.widget.ApplyReadView
+        android:id="@+id/vPermission"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/periodEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/d40"
+        android:gravity="center">
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/favMagicIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_below="@id/rl"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/d5"
+        android:background="@color/c10FFFFFF" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpHelper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@id/view"
+        />
+    <View
+        android:id="@+id/rlLogoImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c00000000">
+    </View>
+</RelativeLayout>

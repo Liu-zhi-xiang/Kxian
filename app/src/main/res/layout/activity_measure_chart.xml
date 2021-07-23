@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F">
+    <TextView
+        android:id="@+id/tvDetailHint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d24"
+        android:gravity="center"
+        android:textColor="@color/chart_white"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvDetailHint"
+        android:layout_above="@+id/llBottomTab">
+
+        <RadioGroup
+            android:id="@+id/rgMeasureView"
+            style="@style/unit_group_excel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d40"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rbMeasureLeft"
+                style="@style/measure_rb_excel"
+                android:background="@drawable/tab_left_selector"
+                android:checked="true"
+                android:text="@string/intoLp"
+                 />
+
+            <RadioButton
+                android:id="@+id/rbMeasureRight"
+                style="@style/measure_rb_excel"
+                android:background="@drawable/tab_right_selector"
+                android:checked="false"
+                android:text="@string/lmeValre"/>
+
+        </RadioGroup>
+        <!--时间 买卖-->
+        <include
+            android:id="@+id/llRoseSellOrBuy"
+            layout="@layout/include_market_kline_datetime_buysell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgMeasureView" />
+
+        <View
+            android:id="@+id/viewline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:layout_below="@+id/llRoseSellOrBuy"
+            android:background="@color/c343657" />
+        <!--k线-->
+        <include
+            android:id="@+id/llMeasurekChartView"
+            layout="@layout/layout_measure_kline_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewline"
+            android:visibility="gone" />
+        <!--分时图-->
+        <include
+            android:id="@+id/llMeasureMinuteView"
+            layout="@layout/layout_alphametal_minute_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewline"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <!--底部-->
+    <include
+        layout="@layout/include_market_kline_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

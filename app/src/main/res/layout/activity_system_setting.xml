@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cF5F5F5"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/cffffff"
+        android:paddingLeft="@dimen/d24"
+        android:paddingTop="@dimen/d10"
+        android:paddingRight="@dimen/d10"
+        android:paddingBottom="@dimen/d10">
+
+        <TextView
+            style="@style/company_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/linear_left"
+            android:gravity="center_vertical"
+            android:text="@string/txt_new_msg_notice" />
+
+        <LinearLayout
+            android:id="@+id/linear_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/sbMsgSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                app:sb_checked="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/cE7EDF5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/cffffff"
+        android:paddingLeft="@dimen/d24"
+        android:paddingTop="@dimen/d10"
+        android:paddingRight="@dimen/d10"
+        android:paddingBottom="@dimen/d10">
+
+        <TextView
+            style="@style/company_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/sbBallSetting"
+            android:gravity="center_vertical"
+            android:text="@string/txt_ball_setting" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/sbBallSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/cE7EDF5" />
+
+    <RelativeLayout
+        android:id="@+id/rlAppUpdate"
+        style="@style/my_layout_item">
+
+        <TextView
+            android:id="@+id/txtVersion"
+            style="@style/company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/txt_app_update" />
+
+        <ImageView
+            android:id="@+id/ivNewUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/txtVersion"
+            android:src="@mipmap/iv_user_new"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvAppUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/lists_icon_right"
+            android:textColor="@color/c999999"
+            android:textSize="@dimen/f16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/cE7EDF5" />
+
+    <RelativeLayout
+        android:id="@+id/rlClearCache"
+        style="@style/my_layout_item">
+
+        <TextView
+            style="@style/company_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvCacheSize"
+            android:gravity="center_vertical"
+            android:text="@string/txt_clear_cache" />
+
+        <TextView
+            android:id="@+id/tvCacheSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0M"
+            android:textColor="@color/cFB404B"
+            android:textSize="@dimen/f16" />
+    </RelativeLayout>
+    <!--用户token-->
+    <LinearLayout
+        android:id="@+id/llUserTokenCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="@color/cE7EDF5" />
+
+        <TextView
+            style="@style/company_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d50"
+            android:layout_centerVertical="true"
+            android:background="@color/cffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/d25"
+            android:text="用户Token复制" />
+
+    </LinearLayout>
+    <!--友盟统计-->
+    <LinearLayout
+        android:id="@+id/llCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="@color/cE7EDF5" />
+
+        <TextView
+            style="@style/company_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d50"
+            android:layout_centerVertical="true"
+            android:background="@color/cffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/d25"
+            android:text="友盟统计DeviceID和Mac复制" />
+
+    </LinearLayout>
+
+    <!--友盟推送-->
+    <LinearLayout
+        android:id="@+id/llPushCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="@color/cE7EDF5" />
+
+        <TextView
+            style="@style/company_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d50"
+            android:layout_centerVertical="true"
+            android:background="@color/cffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/d25"
+            android:text="友盟推送DeviceID复制" />
+
+    </LinearLayout>
+
+
+    <!--友盟推送-->
+    <LinearLayout
+        android:id="@+id/llPushCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="@color/cE7EDF5" />
+
+        <TextView
+            android:id="@+id/tvPushCount"
+            style="@style/company_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d50"
+            android:layout_centerVertical="true"
+            android:background="@color/cffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/d25"
+            android:text="行情socket推送次数复制" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlChangeColor"
+        style="@style/my_layout_item"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/company_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvColor"
+            android:gravity="center_vertical"
+            android:text="@string/txt_color_setting" />
+
+        <TextView
+            android:id="@+id/tvColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/lists_icon_right"
+            android:text="蓝色版"
+            android:textColor="@color/c999999"
+            android:textSize="@dimen/f16" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btnLoginOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center"
+        android:paddingTop="@dimen/d15"
+        android:paddingBottom="@dimen/d15"
+        android:text="@string/login_out"
+        android:textColor="@color/cFB404B"
+        android:textSize="@dimen/f16" />
+</LinearLayout>
+

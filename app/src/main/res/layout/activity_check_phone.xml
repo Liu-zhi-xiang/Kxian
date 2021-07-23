@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cF5F5F5"
+    android:orientation="vertical">
+
+    <com.gjmetal.app.widget.ClearEditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/d8"
+        android:background="@drawable/shap_edittextbg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:hint="@string/input_new_phone"
+        android:inputType="phone"
+        android:maxLength="13"
+        android:paddingLeft="@dimen/d15"
+        style="@style/input_style"
+        android:textColor="@color/c333333"
+        android:textColorHint="@color/c9EB2CD"
+        android:textSize="@dimen/f16" />
+    <!--验证码登录-->
+    <RelativeLayout
+        android:id="@+id/rlImgCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shap_edittextbg"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivSendImageCode"
+            android:layout_width="@dimen/d88"
+            android:layout_height="@dimen/d45"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/d1"
+            android:layout_marginRight="@dimen/d12"
+            android:layout_marginBottom="@dimen/d1"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY" />
+
+        <com.gjmetal.app.widget.ClearEditText
+            android:id="@+id/etSendImageCode"
+            android:paddingLeft="@dimen/d15"
+            style="@style/input_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d60"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/d10"
+            android:layout_toLeftOf="@+id/ivSendImageCode"
+            android:background="@color/transparent"
+            android:hint="@string/txt_input_img_code"
+            android:textColor="@color/c333333"
+            android:textColorHint="@color/c9EB2CD"
+            android:inputType="text"
+            android:textSize="@dimen/f16"
+            android:minHeight="@dimen/d50" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/cFFFFFFFF">
+
+
+        <com.gjmetal.app.widget.ClearEditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shap_edittextbg"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_input_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/d15"
+            style="@style/input_style"
+            android:textColor="@color/c333333"
+            android:textColorHint="@color/c9EB2CD"
+            android:textSize="@dimen/f16" />
+
+        <TextView
+            android:id="@+id/tvGetmessage"
+            android:layout_width="@dimen/d120"
+            android:layout_height="@dimen/d44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_message"
+            android:gravity="center"
+            android:text="@string/txt_get_code"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f14" />
+    </RelativeLayout>
+
+</LinearLayout>

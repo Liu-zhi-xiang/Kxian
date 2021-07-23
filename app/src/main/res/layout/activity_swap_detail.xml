@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="horizontal"
+    tools:context=".ui.alphametal.lme.SwapDetailActivity">
+
+
+
+    <TextView
+        android:id="@+id/tvLodMore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d36"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c2A2D4F"
+        android:gravity="center"
+        android:text="@string/start_load_more"
+        android:textColor="@color/c6A798E"
+        android:textSize="@dimen/d12"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tvLodMore"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/cardView"
+            android:layout_width="@dimen/d120"
+            android:layout_height="wrap_content"
+
+            app:cardBackgroundColor="@color/c4D202239"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false"
+            app:contentPaddingRight="0dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:id="@+id/llLeft"
+                android:layout_width="@dimen/d120"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/d5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d28"
+                    android:background="#2A2D4F"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/d8"
+                    android:text="合约"
+                    android:textColor="#6A798E"
+                    android:textSize="@dimen/f13" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/leftRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/c2A2D4F"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <com.gjmetal.app.widget.SwapScrollView
+            android:id="@+id/llRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/llLeft"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d28"
+                    android:background="@color/c2A2D4F"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/d70"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:gravity="center_vertical|right"
+                        android:text="最新价"
+                        android:textColor="#6A798E"
+                        android:textSize="@dimen/f13" />
+
+                    <TextView
+                        android:id="@+id/tvUpDown"
+                        android:layout_width="@dimen/d60"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:gravity="center_vertical|right"
+                        android:text="涨跌"
+                        android:textColor="#6A798E"
+                        android:textSize="@dimen/f13" />
+
+                    <TextView
+                        android:layout_width="@dimen/d60"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:gravity="center_vertical|right"
+                        android:text="报买时间"
+                        android:textColor="#6A798E"
+                        android:textSize="@dimen/f13" />
+
+                    <TextView
+                        android:layout_width="@dimen/d60"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:gravity="center_vertical|right"
+                        android:text="手数"
+                        android:textColor="#6A798E"
+                        android:textSize="@dimen/f13" />
+
+                    <TextView
+                        android:id="@+id/tvBuy"
+                        android:layout_width="@dimen/d80"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:gravity="center_vertical|right"
+                        android:text="报买"
+                        android:textColor="#6A798E"
+                        android:textSize="@dimen/f13" />
+
+
+                    <TextView
+                        android:id="@+id/tvSell"
+                        android:layout_width="@dimen/d80"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:gravity="center_vertical|right"
+                        android:text="报卖"
+                        android:textColor="#6A798E"
+                        android:textSize="@dimen/f13" />
+
+                    <TextView
+                        android:layout_width="@dimen/d60"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:gravity="center_vertical|right"
+                        android:text="手数"
+                        android:textColor="#6A798E"
+                        android:textSize="@dimen/f13" />
+
+                    <TextView
+                        android:layout_width="@dimen/d60"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:gravity="center_vertical|right"
+                        android:text="报卖时间"
+                        android:textColor="#6A798E"
+                        android:textSize="@dimen/f13" />
+
+                    <TextView
+                        android:layout_width="@dimen/d80"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_marginRight="@dimen/d8"
+                        android:gravity="center_vertical|right"
+                        android:text="昨收"
+                        android:textColor="#6A798E"
+                        android:textSize="@dimen/f13" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rightRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/c2A2D4F"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+
+        </com.gjmetal.app.widget.SwapScrollView>
+
+    </LinearLayout>
+
+
+
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/swapEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/rlLogoImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c00000000"/>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+

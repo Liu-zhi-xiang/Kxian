@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c3"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvErrorHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/cF27A68"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/d5"
+            android:textColor="@color/cFFFFFF"
+            android:textSize="@dimen/f14"
+            android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_marginRight="@dimen/d20"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d20"
+            android:src="@mipmap/login_logo" />
+        <!--用户名-->
+
+
+        <com.gjmetal.app.widget.ClearEditText
+            android:id="@+id/etUserName"
+            style="@style/login_et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/d50"
+            android:layout_toLeftOf="@+id/vPsw"
+            android:background="@drawable/shape_input_nor"
+            android:hint="@string/txt_input_username"
+            android:inputType="text"
+            android:minHeight="@dimen/d50" />
+
+
+        <!--密码-->
+        <include
+            android:id="@+id/vPswLogin"
+            layout="@layout/layout_psw_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d15"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/btn_login_style"
+            android:layout_marginTop="@dimen/d30"
+            android:text="@string/txt_register" />
+
+        <include layout="@layout/item_user_privacy_policy"/>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

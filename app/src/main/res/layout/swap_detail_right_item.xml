@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d34"
+    android:background="#1E3A65"
+    android:layout_marginBottom="@dimen/d1"
+    android:orientation="horizontal">
+
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvNewPriceValue"
+        android:layout_width="@dimen/d70"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d10"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:lines="1"
+        android:text="6257.10"
+        android:textColor="#F27A68"
+        android:textSize="@dimen/f16"
+        autofit:minTextSize="8sp" />
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvUpDownValue"
+        android:layout_width="@dimen/d60"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d10"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:lines="1"
+        android:text="+57.10"
+        android:textColor="#F27A68"
+        android:textSize="@dimen/f16"
+        autofit:minTextSize="8sp" />
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvBuyDateValue"
+        android:layout_width="@dimen/d60"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d10"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:lines="1"
+        android:text="20:53"
+        android:textColor="#E7EDF5"
+        android:textSize="@dimen/f16"
+        autofit:minTextSize="8sp" />
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvBuyNumsValue"
+        android:layout_width="@dimen/d60"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d10"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:lines="1"
+        android:text="20"
+        android:textColor="#E7EDF5"
+        android:textSize="@dimen/f16"
+        autofit:minTextSize="8sp" />
+
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvBuyValue"
+        android:layout_width="@dimen/d80"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d10"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:lines="1"
+        android:text="6257.25"
+        android:textColor="#E7EDF5"
+        android:textSize="@dimen/f16"
+        autofit:minTextSize="8sp" />
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvSellValue"
+        android:layout_width="@dimen/d80"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d10"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:lines="1"
+        android:text="6264.85"
+        android:textColor="#E7EDF5"
+        android:textSize="@dimen/f16"
+        autofit:minTextSize="8sp" />
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvSellNumsValue"
+        android:layout_width="@dimen/d60"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d10"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:lines="1"
+        android:text="2"
+        android:textColor="#E7EDF5"
+        android:textSize="@dimen/f16"
+        autofit:minTextSize="8sp" />
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvSellDateValue"
+        android:layout_width="@dimen/d60"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d10"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:lines="1"
+        android:text="20:56"
+        android:textColor="#E7EDF5"
+        android:textSize="@dimen/f16"
+        autofit:minTextSize="8sp" />
+
+
+    <com.gjmetal.app.widget.autoText.AutofitTextView
+        android:id="@+id/tvYTDPutValue"
+        android:layout_width="@dimen/d80"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d8"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:lines="1"
+        android:text="6314.75"
+        android:textColor="#E7EDF5"
+        android:textSize="@dimen/f16"
+        autofit:minTextSize="8sp" />
+
+
+</LinearLayout>

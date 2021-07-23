@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_pop_market"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/d20"
+        android:paddingRight="@dimen/d20">
+
+        <TextView
+            android:id="@+id/tvMarketTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_top"
+            android:textColor="@color/cFFFFFF"
+            android:textSize="@dimen/f14" />
+
+        <View
+            android:id="@+id/topView"
+            android:layout_width="@dimen/d1"
+            android:layout_height="@dimen/d20"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/d15"
+            android:visibility="visible"
+            android:background="@color/c4F5490" />
+
+        <TextView
+            android:id="@+id/tvMarketEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:text="@string/txt_edit"
+            android:textColor="@color/cFFFFFF"
+            android:textSize="@dimen/f14" />
+
+        <View
+            android:id="@+id/editView"
+            android:layout_width="@dimen/d1"
+            android:layout_height="@dimen/d20"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/d15"
+            android:background="@color/c4F5490" />
+
+        <TextView
+            android:id="@+id/tvMarketDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_delete"
+            android:paddingTop="@dimen/d8"
+            android:paddingBottom="@dimen/d8"
+            android:textColor="@color/cFFFFFF"
+            android:textSize="@dimen/f14" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

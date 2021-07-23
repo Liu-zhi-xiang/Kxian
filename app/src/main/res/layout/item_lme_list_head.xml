@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/c2A2D4F"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/vtwo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d10"
+        android:background="@color/c202239" />
+
+    <LinearLayout
+        android:id="@+id/llLmeOne"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d34"
+        android:layout_below="@+id/vtwo"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLmeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:drawableLeft="@mipmap/ic_global_line"
+            android:drawablePadding="@dimen/d6"
+            android:text="- -"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f14" />
+
+        <TextView
+            android:id="@+id/tvLmeTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f13" />
+
+        <TextView
+            android:id="@+id/tvSwapsDetails"
+            android:layout_width="@dimen/d70"
+            android:layout_height="24dp"
+            android:layout_marginRight="@dimen/d9"
+            android:background="@drawable/rb_lme_bg_selecter_two"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="调期费详情 "
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f12" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/vthree"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_below="@+id/rgTab"
+        android:background="@color/c10FFFFFF" />
+    <RadioGroup
+        android:id="@+id/rgTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llLmeOne"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/d14"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/rbDayComparison"
+            style="@style/lme_tab_radiobutton_two"
+            android:layout_marginRight="@dimen/d20"
+            android:checked="true"
+            android:text="@string/txt_day_comparison" />
+
+        <RadioButton
+            android:id="@+id/rbWeekComparison"
+            style="@style/lme_tab_radiobutton_two"
+            android:layout_marginRight="@dimen/d20"
+            android:text="@string/txt_week_comparison" />
+
+        <RadioButton
+            android:id="@+id/rbTwoWeekComparison"
+            style="@style/lme_tab_radiobutton_two"
+            android:layout_marginRight="@dimen/d20"
+            android:text="@string/txt_twoweek_comparison" />
+    </RadioGroup>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlOne"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d280"
+        android:layout_below="@+id/vthree"
+        >
+
+        <com.star.kchart.lemview.GroupView
+            android:id="@+id/lmeViewTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:viewtype="2" />
+
+        <com.gjmetal.app.widget.EmptyView
+            android:id="@+id/lmeEmptyTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewTab"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vfour"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_below="@+id/rlOne"
+        android:background="@color/c10FFFFFF" />
+
+    <View
+        android:id="@+id/vfive"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d10"
+        android:layout_below="@+id/vfour"
+        android:background="@color/c202239" />
+
+    <LinearLayout
+        android:id="@+id/llLmeTwo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d34"
+        android:layout_below="@+id/vfive"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLmeTitleTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:drawableLeft="@mipmap/ic_global_line"
+            android:drawablePadding="@dimen/d6"
+            android:text="- -"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f14" />
+
+        <TextView
+            android:id="@+id/tvLmeTimeTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f13" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTwo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d250"
+        android:layout_below="@+id/llLmeTwo">
+
+        <com.star.kchart.lemview.GroupView
+            android:id="@+id/lme_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:viewtype="1" />
+
+        <com.gjmetal.app.widget.EmptyView
+            android:id="@+id/lmeEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewTab"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vsix"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_below="@+id/rlTwo"
+        android:background="@color/c10FFFFFF" />
+
+    <View
+        android:id="@+id/vseven"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d10"
+        android:layout_below="@+id/vsix"
+        android:background="@color/c202239" />
+
+</LinearLayout>

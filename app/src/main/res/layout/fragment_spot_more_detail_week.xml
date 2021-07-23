@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/vTop"
+        layout="@layout/include_spot_day_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d28"
+        android:background="@color/c2A2D4F"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/d5"
+        android:layout_below="@+id/vTop"
+        android:paddingBottom="@dimen/d5">
+        <!--时间-->
+        <TextView
+            android:id="@+id/tvMonthTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.3"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/d8"
+            android:text="@string/txt_month_time"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f13" />
+
+        <!--周均价-->
+        <TextView
+            android:id="@+id/tvAvgPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center|right"
+            android:text="@string/txt_avg_price"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f13" />
+        <!--单位-->
+        <TextView
+            android:id="@+id/tvMonthUnit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/d8"
+            android:layout_weight="0.8"
+            android:gravity="center|right"
+            android:text="@string/txt_unit"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f13" />
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llTop"
+        android:background="@color/c2A2D4F">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvWeek"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c2A2D4F"
+            />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

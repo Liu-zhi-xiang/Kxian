@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custompb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cFFFFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d36"
+        android:background="@color/cF5F5F5"
+        android:orientation="vertical"
+        android:padding="@dimen/d15">
+
+
+        <ImageView
+            android:id="@+id/ivFileIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="@dimen/d10"
+            android:background="@color/c2D7FE6"/>
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c111010"
+            android:textSize="@dimen/f22" />
+
+        <TextView
+            android:id="@+id/tvSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.3M"
+            android:textColor="@color/c979797"
+            android:layout_marginTop="@dimen/d10"
+            android:textSize="@dimen/f14" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/d36"
+    android:layout_marginRight="@dimen/d36"
+    android:layout_marginBottom="@dimen/d20"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvLoadState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/f14"
+        android:textColor="@color/c404347"
+        android:layout_marginBottom="@dimen/d15"
+        android:visibility="invisible"
+        android:text="正在下载"/>
+    <com.gjmetal.app.widget.NumberProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d20"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tvTryAgain"
+        android:visibility="invisible"
+        custompb:my_progress_current="0"
+        custompb:my_progress_max="100"
+        custompb:my_progress_reached_bar_height="3dp"
+        custompb:my_progress_reached_color="@color/c1"
+        custompb:my_progress_text_color="@color/c1"
+        custompb:my_progress_text_offset="2dp"
+        custompb:my_progress_text_size="14sp"
+        custompb:my_progress_text_visibility="visible"
+        custompb:my_progress_unreached_bar_height="3dp"
+        custompb:my_progress_unreached_color="#CCCCCC" />
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d36"
+        android:layout_marginRight="@dimen/d36"
+        android:background="@color/c2D7FE6"
+        android:text="开始下载"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/f16" />
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llInformation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg_selector"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="20dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/c202239"
+        android:textSize="@dimen/f16"
+        tools:text="新基金将投资开采锂、钴、镍、铜、稀土和石墨等原材料" />
+
+    <RelativeLayout
+        android:id="@+id/relative_viode"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_marginTop="9dp">
+
+        <ImageView
+            android:id="@+id/image_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/image_start"
+            android:layout_width="@dimen/d30"
+            android:layout_height="@dimen/d30"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+             />
+        <!--android:src="@mipmap/video"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+            <com.gjmetal.app.widget.MyVideoPlay
+                android:id="@+id/player_list_video"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+            <RelativeLayout
+                android:id="@+id/rlNotWifiPlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tvViewPlay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d45"
+                    android:layout_marginRight="@dimen/d26"
+                    android:layout_marginLeft="@dimen/d26"
+                    android:text="你正在使用移动数据, "
+                    android:textColor="@color/cE7EDF5"
+                    android:textSize="@dimen/d16"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/tvViewPlay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/d26"
+                    android:layout_marginLeft="@dimen/d26"
+                    android:layout_below="@id/tvViewPlay1"
+                    android:text="继续观看将消耗大量流量,是否确认观看?"
+                    android:textColor="@color/cE7EDF5"
+                    android:textSize="@dimen/d16"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/btnCencalPlay"
+                    android:layout_width="@dimen/d100"
+                    android:layout_height="@dimen/d36"
+                    android:layout_below="@id/tvViewPlay2"
+                    android:layout_marginLeft="@dimen/d60"
+                    android:layout_marginTop="@dimen/d13"
+                    android:text="@string/video_wifi_cancel"
+                    android:textColor="@color/cE7EDF5"
+                    android:textSize="@dimen/d16"
+                    android:background="@drawable/shape_view_play_btn"/>
+
+                <Button
+                    android:id="@+id/btnConfirmPlay"
+                    android:layout_width="@dimen/d100"
+                    android:layout_height="@dimen/d36"
+                    android:layout_below="@id/tvViewPlay2"
+                    android:layout_marginRight="@dimen/d60"
+                    android:layout_marginTop="@dimen/d13"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/video_wifi_confirm"
+                    android:textColor="@color/cE7EDF5"
+                    android:textSize="@dimen/d16"
+                    android:background="@drawable/shape_view_play_btn"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlFaillPaly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+                <TextView
+                    android:id="@+id/tvViewFaillPaly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d63"
+                    android:layout_marginRight="@dimen/d26"
+                    android:layout_marginLeft="@dimen/d26"
+                    android:text="@string/video_fill_play"
+                    android:textColor="@color/c6A798E"
+                    android:textSize="@dimen/d16"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/btnFaillPlay"
+                    android:layout_width="@dimen/d100"
+                    android:layout_height="@dimen/d36"
+                    android:layout_below="@+id/tvViewFaillPaly"
+                    android:layout_marginTop="@dimen/d21"
+                    android:layout_centerInParent="true"
+                    android:text="@string/click_retry"
+                    android:textColor="@color/c6A798E"
+                    android:textSize="@dimen/d16"
+                    android:background="@drawable/shape_faill_paly_btn"/>
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_information_bottom_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

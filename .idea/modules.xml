@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android.iml" filepath="$PROJECT_DIR$/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frescoimageviewer/android.frescoimageviewer.iml" filepath="$PROJECT_DIR$/.idea/modules/frescoimageviewer/android.frescoimageviewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/galleryfinal/android.galleryfinal.iml" filepath="$PROJECT_DIR$/.idea/modules/galleryfinal/android.galleryfinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kchartlib/android.kchartlib.iml" filepath="$PROJECT_DIR$/.idea/modules/kchartlib/android.kchartlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mvp/android.mvp.iml" filepath="$PROJECT_DIR$/.idea/modules/mvp/android.mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/websocket/android.websocket.iml" filepath="$PROJECT_DIR$/.idea/modules/websocket/android.websocket.iml" />
+    </modules>
+  </component>
+</project>

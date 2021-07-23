@@ -1,0 +1,44 @@
+ext {
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 16,
+            targetSdkVersion : 28,
+            versionCode      : 2000060,
+            versionName      : '2.6.0',
+            VSupportSdk      : '28.0.0',
+            VRetrofitSdk     : "2.6.1",
+            VOkhttp          : "4.2.0",
+            VRxlifecycle     : "2.2.2",
+    ]
+    dependencies = [
+            "appcompat-v7"               : "com.android.support:appcompat-v7:${android["VSupportSdk"]}",
+            "support-v4"                 : "com.android.support:support-v4:${android["VSupportSdk"]}",
+            "design"                     : "com.android.support:design:${android["VSupportSdk"]}",
+            "annotations"                : "com.android.support:support-annotations:${android["VSupportSdk"]}",
+            "recyclerview-v7"            : "com.android.support:recyclerview-v7:" + "${android["VSupportSdk"]}",
+            "butterknife"                : "com.jakewharton:butterknife:8.5.1",
+            "eventbus"                   : "org.greenrobot:eventbus:3.1.1",
+            "glide"                      : "com.github.bumptech.glide:glide:3.7.0",
+            "xrecyclerview"              : "com.github.limedroid:ARecyclerView:v1.2.1",
+            "gson"                       : "com.google.code.gson:gson:2.8.5",
+            "rxandroid"                  : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            "rxjava"                     : "io.reactivex.rxjava2:rxjava:2.2.12",
+            "retrofit"                   : "com.squareup.retrofit2:retrofit:${android["VRetrofitSdk"]}",
+            "retrofit-converter-gson"    : "com.squareup.retrofit2:converter-gson:${android["VRetrofitSdk"]}",
+            "retrofit-adapter-rxjava"    : "com.squareup.retrofit2:adapter-rxjava2:${android["VRetrofitSdk"]}",
+            "okhttp3-logging-interceptor": "com.squareup.okhttp3:logging-interceptor:${android["VOkhttp"]}",
+            "okhttp3"                    : "com.squareup.okhttp3:okhttp:${android["VOkhttp"]}",
+            "rxlifecycle"                : "com.trello.rxlifecycle2:rxlifecycle:${android["VRxlifecycle"]}",
+            "rxlifecycle-android"        : "com.trello.rxlifecycle2:rxlifecycle-android:${android["VRxlifecycle"]}",
+            "rxlifecycle-components"     : "com.trello.rxlifecycle2:rxlifecycle-components:${android["VRxlifecycle"]}",
+            "rxpermissions"              : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar",
+            "permissions"                : "com.mylhyl:acp:1.2.0",
+            "pickerview"                 : "com.contrarywind:Android-PickerView:3.2.7",
+            "smartRefreshLayout"         : "com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1",
+            "smartRefreshHeader"         : "com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1",//没有使用特殊Header，可以不加这行
+            "xutils"                     : "org.xutils:xutils:3.5.0", //版本下载
+            "navigationtabstrip"         : "com.github.devlight.navigationtabstrip:navigationtabstrip:1.0.4",//tab切换
+    ]
+
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/vTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:background="@color/cFF3F4260"
+                android:visibility="gone" />
+
+            <com.gjmetal.app.widget.MyGridView
+                android:id="@+id/gvTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cFF3F4260"
+                android:horizontalSpacing="@dimen/d1"
+                android:numColumns="2"
+                android:verticalSpacing="@dimen/d1" />
+
+            <View
+                android:id="@+id/vBottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:background="@color/cFF3F4260"
+                android:visibility="gone" />
+
+
+            <View
+                android:id="@+id/vNextTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_marginTop="@dimen/d20"
+                android:background="@color/cFF3F4260"
+                android:visibility="visible" />
+
+            <com.gjmetal.app.widget.MyGridView
+                android:id="@+id/gvBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cFF3F4260"
+                android:horizontalSpacing="@dimen/d1"
+                android:numColumns="2"
+                android:verticalSpacing="@dimen/d1" />
+
+            <View
+                android:id="@+id/vNextBottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_marginBottom="@dimen/d20"
+                android:background="@color/cFF3F4260"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:gravity="center" />
+</RelativeLayout>

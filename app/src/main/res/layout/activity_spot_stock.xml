@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical"
+    tools:context=".ui.spot.SpotStockActivity">
+
+    <LinearLayout
+        android:id="@+id/llTopContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c2A2D4F"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/d15"
+            android:paddingTop="@dimen/d3"
+            android:paddingRight="@dimen/d15"
+            android:paddingBottom="@dimen/d8">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:text=""
+                android:textColor="@color/cffffff"
+                android:textSize="@dimen/f18"
+                />
+
+            <TextView
+                android:id="@+id/tvSumValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/cffffff"
+                android:textSize="@dimen/f18"
+               />
+
+            <TextView
+                android:id="@+id/tvUorD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/c3EB86A"
+                android:textSize="@dimen/f18"
+                 />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d5"
+            android:layout_marginLeft="@dimen/d15"
+            android:layout_marginRight="@dimen/d15"
+            android:background="@color/c343657" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c2A2D4F"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/d8"
+            android:paddingTop="@dimen/d6"
+            android:paddingRight="@dimen/d8"
+            android:paddingBottom="@dimen/d5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="center_vertical|left"
+                android:text="@string/mingcheng"
+                android:textColor="@color/c6A798E"
+                android:textSize="@dimen/f13" />
+
+            <TextView
+                android:id="@+id/tvNumerical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="right"
+                android:minWidth="@dimen/d100"
+                android:text="@string/shuzhi"
+                android:textColor="@color/c6A798E"
+                android:textSize="@dimen/f13" />
+
+            <TextView
+                android:id="@+id/tvIncrease"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:text="@string/increaseordecrease"
+                android:textColor="@color/c6A798E"
+                android:textSize="@dimen/f13" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvStock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="true" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewTab"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

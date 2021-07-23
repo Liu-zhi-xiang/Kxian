@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cffffff"
+    android:scrollbars="none"
+    tools:context=".ui.my.MyInformationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/linear_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/image_bg"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="#3301070e" />
+
+            <com.gjmetal.app.widget.TrigonView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true" />
+
+
+            <RelativeLayout
+                android:id="@+id/relative_head"
+                android:layout_width="98dp"
+                android:layout_height="98dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d75"
+                android:background="@drawable/shape_white">
+
+                <com.gjmetal.app.widget.CircleImageView
+                    android:id="@+id/image_head"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/iv_user_head_default" />
+                <ImageView
+                    android:id="@+id/ivVip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d5"
+                    android:layout_marginLeft="@dimen/d5"
+                    android:visibility="gone"
+                    android:src="@mipmap/ic_user_vip_whitebg"/>
+            </RelativeLayout>
+
+
+            <com.gjmetal.app.widget.autoText.AutofitTextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_head"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingTop="@dimen/d5"
+                android:paddingBottom="@dimen/d5"
+                android:textColor="@color/c202239"
+                android:textSize="@dimen/f20"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_marginTop="@dimen/d3"
+                android:layout_marginRight="@dimen/d5"
+                android:textStyle="bold"
+                autofit:minTextSize="@dimen/f8" />
+
+            <TextView
+                android:id="@+id/tvVipTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_marginRight="@dimen/d5"
+                android:textColor="@color/c6A798E"
+                android:textSize="@dimen/f11"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/tvBack"
+                android:layout_width="@dimen/d45"
+                android:layout_height="@dimen/d45"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/d25"
+                android:padding="@dimen/d2"
+                android:src="@mipmap/iv_user_back" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/d10"
+            android:background="@color/cE7EDF5"></View>
+
+
+
+        <com.gjmetal.app.widget.MyGridView
+            android:id="@+id/gvMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cE7EDF5"
+            android:horizontalSpacing="@dimen/d1"
+            android:numColumns="2"
+            android:verticalSpacing="@dimen/d1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cE7EDF5"></View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/d10"
+            android:background="@color/cE7EDF5"></View>
+        <LinearLayout
+            android:id="@+id/llPersonal"
+            style="@style/my_layout_ll_item"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_user_personaldata" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_weight="1"
+                android:text="个人资料"
+                android:textColor="@color/c202239"
+                android:textSize="@dimen/f16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lists_icon_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cE7EDF5"></View>
+
+        <LinearLayout
+            android:id="@+id/llAboutUs"
+            style="@style/my_layout_ll_item"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_user_aboutus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_weight="1"
+                android:text="@string/about_us"
+                android:textColor="@color/c202239"
+                android:textSize="@dimen/f16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lists_icon_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cE7EDF5"></View>
+
+        <RelativeLayout
+            android:id="@+id/rlSystemSetting"
+            style="@style/my_layout_ll_item"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/iv_user_set" />
+
+            <TextView
+                android:id="@+id/tvSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:layout_toRightOf="@+id/image1"
+                android:text="@string/system_setting"
+                android:textColor="@color/c333333"
+                android:textSize="@dimen/f16" />
+
+            <ImageView
+                android:id="@+id/ivNewUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:layout_toRightOf="@+id/tvSet"
+                android:src="@mipmap/iv_user_new"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/lists_icon_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cE7EDF5"
+            android:layout_marginBottom="@dimen/d20"></View>
+
+    </LinearLayout>
+</ScrollView>

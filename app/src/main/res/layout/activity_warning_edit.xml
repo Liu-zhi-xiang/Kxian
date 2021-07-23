@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlWran"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".ui.my.warn.WarningAddActivity">
+
+    <Button
+        android:id="@+id/btnWarnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c4F5490"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/cE7EDF5"
+        android:textSize="@dimen/f16" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnWarnSubmit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c2A2D4F"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAddWarnItemRange"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d24"
+                android:layout_marginTop="@dimen/d8"
+                android:background="@color/cF27A68"
+                android:gravity="center"
+                android:text="@string/add_ware_item"
+                android:textColor="@color/cF5F5F5"
+                android:textSize="@dimen/f14"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:background="@color/c10FFFFFF" />
+
+
+            <TextView
+                android:id="@+id/tvWarnName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d16"
+                android:layout_marginTop="@dimen/d8"
+                android:layout_marginRight="@dimen/d16"
+                android:text="- -"
+                android:textColor="@color/cF5F5F5"
+                android:textSize="@dimen/f18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d6"
+                android:layout_marginLeft="@dimen/d16"
+                android:layout_marginTop="@dimen/d4"
+                android:layout_marginRight="@dimen/d16"
+                android:background="@color/c10FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d16"
+                android:layout_marginRight="@dimen/d16"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d3"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/d4"
+                        android:text="最新"
+                        android:textColor="@color/c6A798E"
+                        android:textSize="@dimen/f12" />
+
+
+                    <TextView
+                        android:id="@+id/tvNewValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d3"
+                        android:layout_marginBottom="@dimen/d3"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/d4"
+                        android:text="--"
+                        android:textColor="@color/cE7EDF5"
+                        android:textSize="@dimen/f14" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/d1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:background="@color/c10FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d3"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/d4"
+                        android:text="涨跌"
+                        android:textColor="@color/c6A798E"
+                        android:textSize="@dimen/f12" />
+
+
+                    <TextView
+                        android:id="@+id/tvChangeValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d3"
+                        android:layout_marginBottom="@dimen/d3"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/d4"
+                        android:text="--"
+                        android:textColor="@color/cE7EDF5"
+                        android:textSize="@dimen/f14" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/d1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:background="@color/c10FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d3"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/d4"
+                        android:text="涨幅"
+                        android:textColor="@color/c6A798E"
+                        android:textSize="@dimen/f12" />
+
+
+                    <TextView
+                        android:id="@+id/tvAmountValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d3"
+                        android:layout_marginBottom="@dimen/d3"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/d4"
+                        android:text="--"
+                        android:textColor="@color/cE7EDF5"
+                        android:textSize="@dimen/f14" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_marginTop="@dimen/d7"
+                android:background="@color/c10FFFFFF" />
+
+            <LinearLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d9"
+                    android:layout_marginRight="@dimen/d16"
+                    android:text="@string/type_warning"
+                    android:textColor="@color/cD4975C"
+                    android:textSize="@dimen/f14" />
+
+
+                <RelativeLayout
+                    android:id="@+id/llWarnType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d12">
+
+                    <TextView
+                        android:id="@+id/tvWarnType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d16"
+                        android:layout_toLeftOf="@id/ivImage1"
+                        android:text="--"
+                        android:textColor="@color/cE7EDF5"
+                        android:textSize="@dimen/f16" />
+
+
+                    <ImageView
+                        android:id="@+id/ivImage1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d10"
+                        android:background="@mipmap/lists_icon_right" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d1"
+                    android:layout_marginTop="@dimen/d10"
+                    android:background="@color/c10FFFFFF" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d9"
+                    android:layout_marginRight="@dimen/d16"
+                    android:text="@string/warning_range"
+                    android:textColor="@color/cD4975C"
+                    android:textSize="@dimen/f14" />
+
+
+                <RelativeLayout
+                    android:id="@+id/llWarnRange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d12">
+
+                    <TextView
+                        android:id="@+id/tvWarnRange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d16"
+                        android:layout_toLeftOf="@id/ivImage2"
+                        android:text="--"
+                        android:textColor="@color/cE7EDF5"
+                        android:textSize="@dimen/f16" />
+
+
+                    <ImageView
+                        android:id="@+id/ivImage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d10"
+                        android:background="@mipmap/lists_icon_right" />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/etWarnRangeValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d13"
+                    android:layout_marginRight="@dimen/d16"
+                    android:background="@drawable/shape_wran_btn_bg"
+                    android:gravity="center_vertical"
+                    android:hint="请输入数值"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:paddingLeft="@dimen/d7"
+                    android:paddingTop="@dimen/d6"
+                    android:paddingBottom="@dimen/d6"
+                    style="@style/input_style"
+                    android:textColor="@color/cE7EDF5"
+                    android:textColorHint="@color/c6A798E"
+                    android:textSize="@dimen/f16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d1"
+                    android:layout_marginTop="@dimen/d10"
+                    android:background="@color/c10FFFFFF" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d9"
+                    android:layout_marginRight="@dimen/d16"
+                    android:text="@string/warning_hz"
+                    android:textColor="@color/cD4975C"
+                    android:textSize="@dimen/f14" />
+
+
+                <RelativeLayout
+                    android:id="@+id/llWarnHz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d12">
+
+                    <TextView
+                        android:id="@+id/tvWarnHz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d16"
+                        android:layout_toLeftOf="@id/ivImage3"
+                        android:text="--"
+                        android:textColor="@color/cE7EDF5"
+                        android:textSize="@dimen/f16" />
+
+
+                    <ImageView
+                        android:id="@+id/ivImage3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d10"
+                        android:background="@mipmap/lists_icon_right" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d1"
+                    android:layout_marginTop="@dimen/d10"
+                    android:background="@color/c10FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

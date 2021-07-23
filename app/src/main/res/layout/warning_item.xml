@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c2A2D4F">
+
+    <RelativeLayout
+        android:id="@+id/ivWraningItem"
+        android:layout_width="@dimen/d40"
+        android:layout_height="@dimen/d47"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/d10"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_chart_warn_delete_nor"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvWarningItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d47"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginRight="@dimen/d10"
+        android:layout_toLeftOf="@id/ivWraningItem"
+        android:text="最新数值大于等于64511/5分钟"
+        android:textSize="@dimen/f16"
+        android:textColor="@color/cE7EDF5"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rlWarnLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d10"
+        android:layout_below="@id/ivWraningItem"
+        android:visibility="visible">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="@color/c10FFFFFF" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

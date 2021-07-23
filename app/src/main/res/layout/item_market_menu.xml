@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/d40"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/c00000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvMenuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/c2A2D4F"
+        android:gravity="center"
+        android:paddingTop="@dimen/d2"
+        android:paddingBottom="@dimen/d4"
+        android:text="铜"
+        android:textColor="@color/cFFFFFFFF"
+        android:textSize="@dimen/f16" />
+
+    <View
+        android:id="@+id/tabLine"
+        android:layout_width="@dimen/d10"
+        android:layout_height="@dimen/d3"
+        android:background="@drawable/shape_tab_line"
+        android:layout_marginBottom="@dimen/d5"/>
+
+</LinearLayout>

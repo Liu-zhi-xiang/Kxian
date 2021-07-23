@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c3"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d300"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/ic_login_bg" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvErrorHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/cF27A68"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/d5"
+                android:textColor="@color/cFFFFFF"
+                android:textSize="@dimen/f14"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d20"
+                android:layout_marginRight="@dimen/d20"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/d20"
+                    android:src="@mipmap/login_logo" />
+                <!--验证码-->
+                <include
+                    layout="@layout/layout_login_phone_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/d50" />
+
+                <Button
+                    android:id="@+id/btnRegisterNext"
+                    style="@style/btn_login_style"
+                    android:layout_marginTop="@dimen/d20"
+                    android:text="@string/txt_register_next" />
+                <include layout="@layout/item_user_privacy_policy"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/txtHasAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_marginBottom="@dimen/d50"
+        android:gravity="center"
+        android:minHeight="@dimen/d40"
+        android:text="@string/txt_has_account"
+        android:textColor="@color/c202239"
+        android:textSize="@dimen/f14" />
+
+
+</RelativeLayout>

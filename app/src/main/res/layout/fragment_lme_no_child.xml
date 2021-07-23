@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.gjmetal.app.widget.ApplyReadView
+        android:id="@+id/vPermission"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/lmeEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        android:gravity="center_vertical"
+        android:overScrollMode="never"
+        android:visibility="gone"
+        app:tabIndicatorColor="@color/cD4975C"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/cffffff"
+        app:tabTextColor="@color/c9EB2CD" />
+    <View
+        android:layout_below="@+id/tabLayout"
+        android:id="@+id/vOne"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/c10FFFFFF" />
+    <View
+        android:id="@+id/rlLogoImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c00000000">
+    </View>
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/vOne"
+            android:id="@+id/rvLemSettlementPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal|bottom" />
+
+</RelativeLayout>

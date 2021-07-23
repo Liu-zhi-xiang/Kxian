@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--用户名密码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_input_nor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPhoneNum"
+            style="@style/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="+86"
+            android:layout_marginLeft="@dimen/d10"
+            android:textColor="@color/c17"
+            android:textSize="@dimen/f17" />
+
+        <View
+            android:layout_width="@dimen/d1"
+            android:layout_height="@dimen/d20"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/d10"
+            android:background="@color/cD1DEEE" />
+
+        <com.gjmetal.app.widget.ClearEditText
+            android:id="@+id/etLoginName"
+            style="@style/login_et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxLength="13"
+            android:hint="@string/txt_input_mobile"
+            android:inputType="phone"
+            android:minHeight="@dimen/d50"
+             />
+    </LinearLayout>
+    <!--图片验证码-->
+    <include
+        android:id="@+id/viewSendImageCode"
+        layout="@layout/layout_sendmsg_image_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d20"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d20"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <!--验证码登录-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d50"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_input_nor"
+            android:orientation="horizontal">
+
+            <com.gjmetal.app.widget.ClearEditText
+                android:id="@+id/etCode"
+                style="@style/login_et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/txtGetCode"
+                android:background="@color/transparent"
+                android:hint="@string/txt_input_code"
+                android:inputType="number"
+                android:maxLength="4"
+                android:minHeight="@dimen/d50" />
+
+            <TextView
+                android:id="@+id/txtGetCode"
+                android:layout_width="@dimen/d120"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/d2"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@color/c4F5490"
+                android:textSize="@dimen/f15"
+                android:textColor="@color/cFFFFFF"
+                android:text="@string/txt_get_code" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

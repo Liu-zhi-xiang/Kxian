@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cffffff"
+    android:orientation="vertical"
+    android:padding="@dimen/d15"
+    tools:context=".ui.my.MessageDetailActivity">
+
+    <TextView
+        android:id="@+id/tvTitleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/c000000"
+        android:textSize="@dimen/f22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d10"
+        android:text=""
+        android:textColor="@color/c6A798E"
+        android:textSize="@dimen/f12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_marginTop="@dimen/d10"
+        android:background="@color/cE7EDF5" />
+
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.3"
+        android:textColor="@color/c202239"
+        android:textSize="@dimen/f16" />
+
+    <TextView
+        android:id="@+id/tvLook"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/d3"
+        android:gravity="center"
+        android:text="点击查看"
+        android:textColor="@color/c4A90E2"
+        android:textSize="@dimen/f16"
+        android:visibility="gone" />
+
+
+</LinearLayout>

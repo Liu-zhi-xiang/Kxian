@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c3">
+
+        <TextView
+            android:id="@+id/tvYearMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/d1"
+            android:gravity="center"
+            android:padding="@dimen/d10"
+            android:text="2012年10月"
+            android:textColor="@color/c111010"
+            android:textSize="@dimen/f16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivChooseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/d20"
+            android:src="@drawable/btn_date_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTop"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/d1"
+        android:layout_toLeftOf="@+id/vXian"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+
+        <com.gjmetal.app.widget.calendarview.CalendarLayout
+            android:id="@+id/calendarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:paddingTop="0dp"
+            app:calendar_content_view_id="@+id/recyclerView"
+            app:calendar_show_mode="only_week_view"
+            app:default_status="shrink">
+
+            <com.gjmetal.app.widget.calendarview.CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d48"
+                android:background="#fff"
+                android:paddingTop="@dimen/d3"
+                app:current_month_lunar_text_color="#CFCFCF"
+                app:current_month_text_color="#333333"
+                app:min_year="1989"
+                app:month_view_show_mode="mode_fix"
+                app:other_month_lunar_text_color="#e1e1e1"
+                app:other_month_text_color="#e1e1e1"
+                app:scheme_text_color="#333"
+                app:scheme_theme_color="#128c4b"
+                app:selected_lunar_text_color="#fff"
+                app:selected_text_color="#fff"
+                app:selected_theme_color="@color/cD4975C"
+                app:week_bar_height="0dp"
+                app:week_view="com.gjmetal.app.widget.calendarview.simple.SimpleWeekView"
+                app:year_view_day_text_color="#333333"
+                app:year_view_day_text_size="10dp"
+                app:year_view_month_text_size="13dp"
+                />
+            <!-- app:month_view="com.gjmetal.app.widget.calendarview.simple.SimpleMonthView"-->
+            <com.gjmetal.app.widget.calendarview.group.GroupRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/c3"
+                android:visibility="gone"
+                app:group_background="@color/c3"
+                app:group_center="false"
+                app:group_has_header="false"
+                app:group_text_color="#555555"
+                app:group_text_size="13dp" />
+        </com.gjmetal.app.widget.calendarview.CalendarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginRight="0.78dp"
+            >
+
+            <TextView
+                android:id="@+id/tvSun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/d3"
+                android:text="@string/sun"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/tvMon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/d3"
+                android:text="@string/mon"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/tvTue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/d3"
+                android:text="@string/tue"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/tvWed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/d3"
+                android:text="@string/wed"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/tvThu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/d3"
+                android:text="@string/thu"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/tvFri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/d3"
+                android:text="@string/fri"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/tvSat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/d5"
+                android:text="@string/sat"
+                android:textSize="@dimen/f14" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vXian"
+        android:layout_width="@dimen/d1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTop"
+        android:layout_alignTop="@+id/rlDate"
+        android:layout_alignBottom="@+id/rlDate"
+        android:layout_toLeftOf="@+id/tvCurrentToDay"
+        android:background="@color/cF5F5F5" />
+
+    <TextView
+        android:id="@+id/tvCurrentToDay"
+        android:layout_width="@dimen/d50"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlTop"
+        android:layout_alignTop="@+id/rlDate"
+        android:layout_alignBottom="@+id/rlDate"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/c3"
+        android:drawablePadding="@dimen/d5"
+        android:gravity="center"
+        android:paddingLeft="@dimen/d10"
+        android:paddingRight="@dimen/d10"
+        android:text="@string/go_today"
+        android:textColor="@color/c202239"
+        android:textSize="@dimen/f14" />
+</RelativeLayout>

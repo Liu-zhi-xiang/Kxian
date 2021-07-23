@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d10"
+        android:background="@color/c202239" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d45"
+        android:background="@color/c2A2D4F">
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="@dimen/d3"
+            android:layout_height="@dimen/d12"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d10"
+            android:background="@drawable/aplemetal_counter_shape" />
+
+        <TextView
+            android:id="@+id/tvSpotQuotation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/vLine"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/d10"
+            android:paddingTop="@dimen/d10"
+            android:paddingBottom="@dimen/d10"
+            android:text="@string/spotquotation"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f16" />
+
+        <ImageView
+            android:id="@+id/ivExplain"
+            android:layout_width="@dimen/d45"
+            android:layout_height="@dimen/d45"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@mipmap/icon_global_explain" />
+
+        <TextView
+            android:id="@+id/tvSpotAnalysisDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/c9EB2CD"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/d10"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:textSize="@dimen/f14"
+            android:text="@string/txt_spotAnalysisDetail"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llspotItemTitter"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/c2A2D4F"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/d10"
+        android:paddingRight="@dimen/d10">
+
+        <TextView
+            android:id="@+id/tvNameOrPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:text="@string/nameorprice"
+            android:textColor="@color/c11"
+            android:textSize="@dimen/f12" />
+
+        <TextView
+            android:id="@+id/tvMeanPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:layout_centerVertical="true"
+            android:text="@string/averageprice"
+            android:layout_weight="1"
+            android:textColor="@color/c11"
+            android:textSize="@dimen/f12" />
+
+        <TextView
+            android:id="@+id/tvGronpUpDown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right|center_vertical"
+            android:text="@string/upanddown"
+            android:textColor="@color/c11"
+            android:textSize="@dimen/f12" />
+    </LinearLayout>
+
+</LinearLayout>

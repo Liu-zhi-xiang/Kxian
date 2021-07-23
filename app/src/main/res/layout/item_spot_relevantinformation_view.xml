@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d230"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/llNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c2A2D4F"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d10"
+        android:paddingTop="@dimen/d5"
+        android:paddingRight="@dimen/d10">
+
+        <TextView
+            android:id="@+id/tvSpotNewsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d3"
+            android:ellipsize="end"
+            android:text="@string/app_name"
+            android:maxLines="1"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/tvSpotNewsTime"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvVip"
+                    android:layout_width="@dimen/d23"
+                    android:layout_height="@dimen/d14"
+                    android:text="VIP"
+                    android:textSize="@dimen/f11"
+                    android:background="@drawable/text_vip_bg"
+                    android:layout_marginRight="@dimen/d4"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textColor="@color/cF27A68"
+                    />
+                <TextView
+                    android:id="@+id/tvSpotNewsSouce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/d20"
+                    android:maxLines="1"
+                    android:padding="@dimen/d2"
+                    android:maxLength="8"
+                    android:text="@string/app_name"
+                    android:ellipsize="end"
+                    android:textColor="@color/c6A798E"
+                    android:textSize="@dimen/f12" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvSpotNewsTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:maxLines="1"
+                android:textColor="@color/c6A798E"
+                android:textSize="@dimen/f12" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginTop="@dimen/d5"
+            android:background="@color/c383B5C" />
+
+    </LinearLayout>
+</LinearLayout>

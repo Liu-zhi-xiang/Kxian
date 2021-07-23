@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/llHander"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d60"
+    android:background="@color/c202239"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvHander"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_hander_load"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/c6A798E"
+        android:textSize="@dimen/f10"
+        android:layout_marginTop="@dimen/d7"
+        android:layout_marginBottom="@dimen/d10"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/ivHander"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d30"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tvHander"
+        android:src="@drawable/loading_anim" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+

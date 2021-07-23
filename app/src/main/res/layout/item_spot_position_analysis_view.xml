@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/d10"
+    android:paddingRight="@dimen/d10"
+    android:paddingBottom="@dimen/d10">
+
+    <LinearLayout
+        android:id="@+id/llAnalysisHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+       >
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvShfe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_chart_point_01"
+            android:drawablePadding="@dimen/d3"
+            android:text="@string/txt_dian_shfe"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f11"
+            autofit:minTextSize="@dimen/f4" />
+
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvShfeLme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d5"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_chart_point_02"
+            android:drawablePadding="@dimen/d3"
+            android:text="@string/txt_dian_shfeLme"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f11"
+            autofit:minTextSize="@dimen/f4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvVipVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d5"
+        android:text="@string/txt_vip_volume"
+        android:paddingLeft="@dimen/d10"
+        android:paddingTop="@dimen/d5"
+        android:paddingRight="@dimen/d10"
+        android:paddingBottom="@dimen/d5"
+        android:textColor="@color/cD4975C"
+        android:textSize="@dimen/f11"
+        android:visibility="gone" />
+
+    <com.gjmetal.app.widget.kline.SpotPositionAnalysisView
+        android:id="@+id/kVolume"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d230"
+        android:layout_marginTop="@dimen/d10"
+        android:visibility="gone" />
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d230"
+        android:layout_marginTop="@dimen/d10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

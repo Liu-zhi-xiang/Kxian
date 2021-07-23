@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/d15"
+    android:gravity="left"
+    android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_agree_register"
+            android:textColor="@color/c999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvRegisterHtml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/txt_app_register_html"
+            android:textColor="@color/cFF2D7FE6"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/and"
+            android:textColor="@color/c999999"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tvPrivacy"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy"
+            android:textColor="@color/cFF2D7FE6"
+            android:textSize="12sp" />
+</LinearLayout>

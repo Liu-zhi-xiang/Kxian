@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cFFFFFF"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:layout_marginTop="@dimen/d8">
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/d10"
+            android:paddingLeft="@dimen/d5"
+            android:paddingRight="@dimen/d15"
+            android:background="@drawable/login_ripper"
+            android:gravity="center"
+            android:text="@string/text_cancle"
+            android:textColor="@color/cBBBBBB"
+            android:textSize="@dimen/f17" />
+
+        <TextView
+            android:id="@+id/tvFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/d10"
+            android:paddingLeft="@dimen/d15"
+            android:paddingRight="@dimen/d5"
+            android:background="@drawable/login_ripper"
+            android:gravity="center"
+            android:text="@string/text_complete"
+            android:textColor="@color/c4A90E2"
+            android:textSize="@dimen/f17" />
+
+    </RelativeLayout>
+
+    <com.weigan.loopview.LoopView
+        android:id="@+id/loopViewPrice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d177"
+        android:layout_marginTop="@dimen/d20"
+        android:layout_marginBottom="@dimen/d20"
+        app:awv_centerTextColor="@color/c000000"
+        app:awv_isLoop="false"
+        app:awv_outerTextColor="@color/cBBBBBB"
+        app:awv_textsize="20" />
+
+</LinearLayout>

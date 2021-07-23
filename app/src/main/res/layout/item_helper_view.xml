@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/d2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:minHeight="@dimen/d45"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/f13"
+        android:paddingRight="@dimen/f13">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <com.gjmetal.app.widget.autoText.AutofitTextView
+                android:id="@+id/tvFutureName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:lines="1"
+                android:textColor="@color/cE7EDF5"
+                android:textSize="@dimen/f16"
+                autofit:minTextSize="4sp" />
+
+            <com.gjmetal.app.widget.autoText.AutofitTextView
+                android:id="@+id/tvFutureRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:lines="1"
+                android:textColor="@color/c9EB2CD"
+                android:textSize="@dimen/f11"
+                android:visibility="gone"
+                autofit:minTextSize="8sp" />
+        </LinearLayout>
+
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvParity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d5"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:lines="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="-"
+            android:textColor="@color/cE7EDF5"
+            android:textSize="@dimen/f16"
+            autofit:minTextSize="8sp" />
+
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvProfit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d5"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:lines="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/cD8DDE3"
+            android:textSize="@dimen/f16"
+            autofit:minTextSize="8sp" />
+
+        <!--涨幅-->
+        <com.gjmetal.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvUpOrDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d5"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:lines="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="-"
+            android:textColor="@color/cD8DDE3"
+            android:textSize="@dimen/f16"
+            android:visibility="visible"
+            autofit:minTextSize="8sp" />
+    </LinearLayout>
+
+</LinearLayout>

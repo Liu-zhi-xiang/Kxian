@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cF5F5F5">
+
+    <RelativeLayout
+        android:id="@+id/rlVipInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d180"
+        android:background="@mipmap/ic_user_vip_bg"
+        android:scaleType="centerCrop"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d34"
+            android:layout_marginTop="@dimen/d60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlhead"
+                android:layout_width="@dimen/d62"
+                android:layout_height="@dimen/d62"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/shape_white">
+
+                <com.gjmetal.app.widget.CircleImageView
+                    android:id="@+id/ivUserHead"
+                    android:layout_width="@dimen/d60"
+                    android:layout_height="@dimen/d60"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/iv_user_head_default" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_toRightOf="@+id/rlhead"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <com.gjmetal.app.widget.autoText.AutofitTextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/rlhead"
+                        android:gravity="center|left"
+                        android:lines="1"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="3dp"
+                        android:textColor="@color/cD8DDE3"
+                        android:textSize="@dimen/f18"
+                        android:maxWidth="@dimen/d180"
+                        android:textStyle="bold"
+                        autofit:minTextSize="@dimen/f8" />
+                    <ImageView
+                        android:id="@+id/ivVip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d3"
+                        android:src="@mipmap/ic_user_vip_icon"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvVipTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d5"
+                    android:text="@string/no_open_vip"
+                    android:textColor="@color/cFFFFFF"
+                    android:textSize="@dimen/f11" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/d25"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/d10">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@mipmap/nav_button_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/vip_center"
+            android:textColor="@color/cFFFFFF"
+            android:textSize="@dimen/f20" />
+    </RelativeLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlVipInfo"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvVip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cF5F5F5"
+            android:fadeScrollbars="true" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.gjmetal.app.widget.EmptyView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlVipInfo"
+        android:visibility="gone" />
+
+    <com.gjmetal.app.widget.ApplyReadView
+        android:id="@+id/applyReadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlVipInfo"
+        android:visibility="gone" />
+</RelativeLayout>

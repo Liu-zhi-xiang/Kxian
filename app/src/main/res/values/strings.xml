@@ -1,0 +1,600 @@
+<resources>
+    <string name="month_computer_data">正在计算中...</string>
+    <string name="app_name">天下金属</string>
+    <string name="net_error">网络问题，请点击</string>
+    <string name="net_error_hint">网络问题，请稍候重试</string>
+    <string name="no_getdata">未获取到数据</string>
+    <string name="menu_market">行情</string>
+    <string name="menu_information">资讯</string>
+    <string name="menu_main_flash">快报</string>
+    <string name="back_twice_exit">再按一次将退出应用</string>
+    <string name="spot_goods">现货</string>
+    <string name="future_goods">期货</string>
+    <string name="dingyue">订阅</string>
+    <string name="no_data">暂无数据</string>
+    <string name="stock">库存</string>
+    <string name="nameorprice">名称/价格</string>
+    <string name="averageprice">均价</string>
+    <string name="upanddown">涨跌</string>
+    <string name="has_change">已选</string>
+    <string name="all_change">全部</string>
+    <string name="txt_edit">编辑</string>
+    <string name="txt_delete">删除</string>
+    <string name="txt_add_my_change">添加自选</string>
+    <string name="txt_add_information_tag">添加订阅</string>
+    <string name="txt_add_custom_tag">添加自定义</string>
+    <string name="txt_cancel_my_change">取消自选</string>
+    <string name="txt_cancel">取消</string>
+    <string name="spotquotation">现货报价</string>
+    <string name="relevantinformation">相关资讯</string>
+    <string name="source">来源/更新时间</string>
+    <string name="num">数量</string>
+    <string name="refresh">刷新</string>
+    <string name="mingcheng">名称</string>
+    <string name="logo_dialog_content">当前账户已在其他设备登录，是否重新登录?</string>
+
+    <string name="start_load_more">加载中</string>
+    <string name="stop_load_more">加载完成</string>
+
+    <string name="start_hander_load">释放刷新</string>
+    <string name="stop_hander_load">正在刷新</string>
+
+    <string name="alphaMeasure">进口测算</string>
+    <string name="alphaLme">LME升贴水</string>
+    <string name="alphaConputer">期权计算器</string>
+
+    <string name="lmeValre">对LME3M比值</string>
+    <string name="intoLp">进口盈亏</string>
+    <string name="not_warning">未设置预警</string>
+
+    <string name="selecter_price_text">请先选择合约</string>
+    <string name="key_board_point">小数点只能使用一次</string>
+    <string name="key_board_add_sub_mark">请以“+”或“-”开头，并紧接着输入数字</string>
+
+    <string name="increaseordecrease">增减</string>
+    <string name="txt_delete_success">删除成功</string>
+    <string name="time">时间</string>
+    <string name="txt_loginname_hint">手机号</string>
+    <string name="txt_input_mobile">请输入手机号</string>
+    <string name="over">完成</string>
+    <string name="biaoqian">订阅标签</string>
+    <string name="txt_get_code">获取短信验证码</string>
+    <string name="txt_input_code">短信验证码</string>
+    <string name="txt_input_img_code">请先输入图形验证码</string>
+    <string name="txt_psw_login">密码登录</string>
+    <string name="txt_btn_login">登录</string>
+    <string name="please_input_psw">请输入密码</string>
+    <string name="txt_new_register">新用户注册></string>
+    <string name="txt_input_psw">请输入密码</string>
+    <string name="txt_code_login">验证码登录</string>
+    <string name="txt_please_input_account">请输入帐号</string>
+    <string name="txt_please_input_loginname">请输入手机号</string>
+    <string name="txt_phone_error">手机号格式错误</string>
+    <string name="txt_code_not_null">短信验证码</string>
+    <string name="txt_please_input_sms_code">请输入短信验证码</string>
+    <string name="txt_forget_psw">忘记密码？</string>
+    <string name="dataname">指标名称</string>
+    <string name="one_month">一个月</string>
+    <string name="third_month">三个月</string>
+    <string name="all">全部</string>
+    <string name="one_year">一年</string>
+    <string name="choose_data">指标选择</string>
+    <string name="unit">单位</string>
+    <string name="shuzhi">数值</string>
+    <string name="txt_btn_sure">确定</string>
+    <string name="choose_time">选择时间</string>
+    <string name="start_time">开始时间</string>
+    <string name="over_time">结束时间</string>
+    <string name="time_chekc">结束时间不能小于开始时间</string>
+    <string name="time_too_big">结束时间不能大于现在时间</string>
+    <string name="other">自定义</string>
+    <string name="txt_reset_psw_success">重置密码成功</string>
+    <string name="txt_send_code_success">发送成功</string>
+    <string name="user_warning">我的预警</string>
+    <string name="add_warning">添加预警</string>
+    <string name="edit_warning">编辑预警</string>
+    <string name="type_warning">预警类型</string>
+    <string name="warning_range">范围</string>
+    <string name="warning_hz">频率</string>
+    <string name="submit">提交</string>
+    <string name="mine_collect">我的收藏</string>
+    <string name="about_us">关于我们</string>
+    <string name="system_setting">系统设置</string>
+    <string name="txt_register">注册</string>
+    <string name="txt_login">登录</string>
+    <string name="txt_reset_psw">重置密码</string>
+    <string name="txt_account_noregister">该账号没有注册</string>
+    <string name="txt_phone_noregister">该手机号未注册</string>
+    <string name="txt_account_hasregister">手机号已注册</string>
+    <string name="txt_has_account">已有账号，去登录</string>
+    <string name="txt_register_next">下一步</string>
+    <string name="txt_input_username">请输入姓名</string>
+    <string name="txt_not_getdata">未获取到数据</string>
+    <string name="txt_app_register_html">《用户服务条款》</string>
+    <string name="txt_app_register_title">用户服务条款</string>
+    <string name="txt_agree_register">注册即视为阅读并同意</string>
+    <string name="name">姓名</string>
+    <string name="head">头像</string>
+    <string name="phone">手机号</string>
+    <string name="login_out">退出登录</string>
+    <string name="camera">拍照</string>
+    <string name="photo">从手机相册选择</string>
+    <string name="text_cancle">取消</string>
+    <string name="text_complete">完成</string>
+    <string name="input_name">请输入姓名</string>
+    <string name="input_phone">请输入手机号</string>
+
+    <string name="select_contenct_no_equal">所选合约不能相同</string>
+    <string name="select_contenct_no_complete">您还未完成选择</string>
+    <string name="select_contenct">请先选择品种</string>
+    <string name="input_name_tip">20个字符以内,中英文不能共用,不能输入特殊字符</string>
+    <string name="input_password_tip">使用6-20位数的密码</string>
+
+    <string name="get">获取验证码</string>
+    <string name="on_check_name">正在修改姓名</string>
+    <string name="check_name_success">修改姓名成功</string>
+    <string name="input_new_phone">请输入新手机号</string>
+    <string name="input_yanzhengmessage">验证码</string>
+    <string name="company_auth">企业认证</string>
+    <string name="txt_company_add_person">添加企业成员</string>
+    <string name="txt_login_time_out">登录超时，请重新登录</string>
+    <string name="company_join">加入企业</string>
+    <string name="company_add_person">添加企业成员</string>
+    <string name="get_message">正在获取短信验证码</string>
+    <string name="input_right_message">验证码不能为空</string>
+    <string name="data_no_login">亲，登录后可免费查看所有数据哦</string>
+    <string name="choose_zhibiao">请选择指标名</string>
+    <string name="is_collect">正在收藏...</string>
+    <string name="is_nocollect">正在删除收藏...</string>
+    <string name="is_noallcollect">正在删除所有收藏...</string>
+    <string name="txt_input_phone">输入手机号</string>
+    <string name="title_send_applycode">发送邀请码</string>
+    <string name="txt_send">发送</string>
+    <string name="txt_applycode_hint">注意：邀请码有效时间24小时</string>
+    <string name="txt_join">加入</string>
+    <string name="allow_write">请允许写入文件权限</string>
+    <string name="txt_exit_app">确定退出登录？</string>
+    <string name="txt_psw_third_error">密码输入错误三次，请输入验证码</string>
+    <string name="company_desc">公司简介</string>
+    <string name="service_phone">客服电话</string>
+    <string name="service_email">客服邮箱</string>
+    <string name="company_email">service@gjmetal.com</string>
+    <string name="company_email_shmet">service@shmet.com</string>
+    <string name="txt_new_msg_notice">新消息提醒</string>
+    <string name="txt_ball_setting">悬浮球</string>
+    <string name="txt_app_update">版本更新</string>
+    <string name="txt_clear_cache">清空缓存</string>
+    <string name="time_bad">日期不合法</string>
+    <string name="txt_clear_over">清空完毕</string>
+    <string name="txt_input_applycode">输入邀请码</string>
+    <string name="input_code">请输入合适的搜索关键字</string>
+    <string name="search_history">历史记录</string>
+    <string name="clean_history">清除数据</string>
+    <string name="txt_submit_success">提交成功</string>
+    <string name="txt_spot_desc">报价说明</string>
+
+    <string name="txt_down">贴</string>A
+    <string name="txt_up">升</string>
+    <string name="empty">暂无数据</string>
+    <string name="mine_message">消息</string>
+    <string name="clean">清空</string>
+    <string name="name_no_empty">姓名不能为空</string>
+    <string name="name_no_empty1">姓名不能含有空格</string>
+    <string name="name_sigle">姓名必须为纯英文或者纯中文</string>
+    <string name="txt_clean_message">确定要清空所有的消息吗?</string>
+    <string name="txt_clean_onemessage">确定要删除消息吗?</string>
+    <string name="txt_clean_colletct">确定要清空所有的消息吗?</string>
+
+    <string name="check_zhibiao">请选择指标</string>
+    <string name="txt_must_update">立即体验</string>
+    <string name="txt_now_isnews_app">当前已经是最新版本</string>
+    <string name="txt_wifi_download">已在Wi-Fi下为您准备好新版本的安装包</string>
+    <string name="load_error">加载失败，请点击</string>
+    <string name="txt_psw_length">密码长度至少6位</string>
+    <string name="txt_wexinfriend">微信好友</string>
+    <string name="txt_wexinfriends">微信朋友圈</string>
+    <string name="txt_qqfriend">QQ好友</string>
+    <string name="txt_sinweibo">新浪微博</string>
+    <string name="txt_copy">复制链接</string>
+    <string name="txt_find_new_version">发现新版本</string>
+    <string name="check_phone">正在修改手机号</string>
+    <string name="check_userperson">个人资料</string>
+    <string name="check_username">修改姓名</string>
+    <string name="check_password">修改密码</string>
+    <string name="check_phone_title">修改手机号</string>
+    <string name="name_length">名字长度2-30个字符</string>
+    <string name="font_small">小</string>
+    <string name="font_center">中</string>
+    <string name="font_big">大</string>
+    <string name="updownPercent">涨幅</string>
+    <string name="upDown">涨跌</string>
+    <string name="profit">进口盈亏</string>
+    <string name="profitUpdown">盈亏涨跌</string>
+    <string name="helperMonth">合约月份</string>
+    <string name="volume">成交量</string>
+    <string name="interest">持仓量</string>
+    <string name="positionAnalysis">持仓分析</string>
+    <string name="search_no_data">未搜索到结果</string>
+    <string name="txt_copy_success">复制成功</string>
+    <string name="src_error">资源错误</string>
+    <string name="again_try">点击重试</string>
+    <string name="again">重试</string>
+    <string name="menu_date">日历</string>
+    <string name="menu_helper">Alpha+</string>
+    <string name="video_wifi_cancel">取消播放</string>
+    <string name="video_wifi_confirm">确认播放</string>
+    <string name="click_retry">点击重试</string>
+    <string name="video_fill_play">视频加载失败,请稍后重试</string>
+    <string name="video_notwork_not_play">请检查您的网络设置</string>
+    <string name="download_finish">下载完成，请点击安装</string>
+
+    <!--个推-->
+
+    <string name="add_ware_item">每个用户最多设置10条预警,您已到达上线</string>
+    <string-array name="lunar_first_of_month">
+        <item>春节</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>冬月</item>
+        <item>腊月</item>
+    </string-array>
+
+    <string-array name="tradition_festival">
+        <item>除夕</item>
+        <item>0101春节</item>
+        <item>0115元宵</item>
+        <item>0505端午</item>
+        <item>0707七夕</item>
+        <item>0815中秋</item>
+        <item>0909重阳</item>
+    </string-array>
+
+    <string-array name="lunar_str">
+        <item>初一</item>
+        <item>初二</item>
+        <item>初三</item>
+        <item>初四</item>
+        <item>初五</item>
+        <item>初六</item>
+        <item>初七</item>
+        <item>初八</item>
+        <item>初九</item>
+        <item>初十</item>
+        <item>十一</item>
+        <item>十二</item>
+        <item>十三</item>
+        <item>十四</item>
+        <item>十五</item>
+        <item>十六</item>
+        <item>十七</item>
+        <item>十八</item>
+        <item>十九</item>
+        <item>二十</item>
+        <item>廿一</item>
+        <item>廿二</item>
+        <item>廿三</item>
+        <item>廿四</item>
+        <item>廿五</item>
+        <item>廿六</item>
+        <item>廿七</item>
+        <item>廿八</item>
+        <item>廿九</item>
+        <item>三十</item>
+    </string-array>
+
+    <string-array name="solar_festival">
+        <item>0101元旦</item>
+        <item>0214情人节</item>
+        <item>0308妇女节</item>
+        <item>0312植树节</item>
+        <item>0315消权日</item>
+        <item>0401愚人节</item>
+        <item>0501劳动节</item>
+        <item>0504青年节</item>
+        <item>0601儿童节</item>
+        <item>0701建党节</item>
+        <item>0801建军节</item>
+        <item>0910教师节</item>
+        <item>1001国庆节</item>
+        <item>1224平安夜</item>
+        <item>1225圣诞节</item>
+    </string-array>
+
+    <string-array name="solar_term">
+        <item>春分</item>
+        <item>清明</item>
+        <item>谷雨</item>
+        <item>立夏</item>
+        <item>小满</item>
+        <item>芒种</item>
+        <item>夏至</item>
+        <item>小暑</item>
+        <item>大暑</item>
+        <item>立秋</item>
+        <item>处暑</item>
+        <item>白露</item>
+        <item>秋分</item>
+        <item>寒露</item>
+        <item>霜降</item>
+        <item>立冬</item>
+        <item>小雪</item>
+        <item>大雪</item>
+        <item>冬至</item>
+        <item>小寒</item>
+        <item>大寒</item>
+        <item>立春</item>
+        <item>雨水</item>
+        <item>惊蛰</item>
+    </string-array>
+
+    <!--<string name="sun">Sun</string>-->
+    <!--<string name="mon">Mon</string>-->
+    <!--<string name="tue">Tue</string>-->
+    <!--<string name="wed">Wed</string>-->
+    <!--<string name="thu">Thu</string>-->
+    <!--<string name="fri">Fri</string>-->
+    <!--<string name="sat">Sat</string>-->
+
+
+    <string name="sun">日</string>
+    <string name="mon">一</string>
+    <string name="tue">二</string>
+    <string name="wed">三</string>
+    <string name="thu">四</string>
+    <string name="fri">五</string>
+    <string name="sat">六</string>
+
+    <string name="go_today">回到\n今天</string>
+    <string name="txt_today_no_event">当日无重要数据发布</string>
+    <string name="load_finish">下载完成</string>
+    <string name="open_down_load">打开</string>
+    <string name="cancel_down_load">取消下载</string>
+    <string name="start_down_load">开始下载</string>
+    <string name="again_down_load">重新下载</string>
+    <string name="cannot_open_file">无法打开,不支持此格式</string>
+    <string name="txt_color_setting">皮肤设置</string>
+    <string name="blue_app">蓝色版</string>
+    <string name="orange_app">橙色版</string>
+    <string name="flash">实时快讯</string>
+    <string name="lmeValue">对LME3M比值</string>
+    <string name="no_helper_data">- -</string>
+    <string name="txt_home_next">跳过</string>
+    <string name="txt_other_download">其它下载</string>
+    <string name="txt_more">更多></string>
+    <string name="txt_gengduo">更多</string>
+    <string name="txt_timebaojia">时间点报价</string>
+
+    <string name="txt_chart_warn">预警</string>
+    <string name="txt_chart_plus">加自选</string>
+    <string name="txt_chart_share">分享</string>
+    <string name="txt_chart_speces">说明</string>
+    <string name="txt_chart_fenxiangdibuzhanshi">现货报价·精品快讯·智能测算</string>
+    <!--K 线-->
+    <string name="txt_sell">卖</string>
+    <string name="txt_buy">买</string>
+    <string name="txt_Inventory">持仓量</string>
+    <string name="txt_Volume">成交量</string>
+    <string name="txt_texttext">中共中央总书记、国家主席、中央军委主席习近平29日上午在中南海同中华全国总工会新
+        一届领导班子成员集体谈话并发表重要讲话。习近平强调，我国工运事业是党的事业的重要组成部分，工会工作是党治国理\n
+        政的一项经常性、基础性工作。要坚持党对工会工作的领导，团结动员亿万职工积极建功新时代，加强对职工的思想政治引领，
+        加大对职工群众的维权服务力度，深入推进工会改革创新，勇于担当、锐意进取，积极作为、真抓实干，开创新时代我国工运
+        事业和工会工作新局面。中共中央政治局常委、中央书记处书记王沪宁参加集体谈话。习近平首先表示，几天前，中国工会
+        十七次全国代表大会胜利闭幕了。大会贯彻党中央要求，对当前和今后一个时期工会工作作出部署，选举产生了全国总工会新
+        一届领导班子。我代表党中央，对中国工会十七大成功召开、对全国总工会新一届领导班子表示热烈祝贺，向全国各族职工群众、
+        劳动模范和工会工作者致以诚挚问候。全国总工会新一届领导班子对贯彻落实党中央决策部署、做好工会工作，态度坚决，信心坚定，
+        情绪饱满，精神振奋。党中央对全国总工会新一届领导班子寄予殷切期望。 事业和工会工作新局面。中共中央政治局常委、中央书
+        记处书记王沪宁参加集体谈话。习近平首先表示，几天前，中国工会记处书记王沪宁参加集体谈话。习近平首先表示，几天前，中国工会
+        十七次全国代表大会胜利闭幕了。大会贯彻党中央要求，对当前和今后一个时期工会工作作出部署，选举产生了全国总工会新
+        一届领导班子。我代表党中央，对中国工会十七大成功召开、对全国总工会新一届领导班子表示热烈祝贺，向全国各族职工群众、
+        劳动模范和工会工作者致以诚挚问候。全国总工会新一届领导班子对贯彻落实党中央决策部署、做好工会工作，态度坚决，信心坚定，
+        情绪饱满，精神振奋。党中央对全国总工会新一届领导班子寄予殷切期望。
+。</string>
+    <string name="txt_day_comparison">一日前</string>
+    <string name="txt_week_comparison">一周前</string>
+    <string name="txt_twoweek_comparison">两周前</string>
+    <string name="txt_newPrice">最新</string>
+    <string name="txt_YesterdayClosePrice">昨收</string>
+    <string name="txt_lme_buy">报买(8:56)</string>
+    <string name="txt_lme_sell">报卖(8:28)</string>
+    <string name="txt_top">置顶</string>
+    <string name="txt_my_change_manager">自选管理</string>
+    <string name="txt_clear">清空</string>
+    <string name="sure_clear_all_choose">确定要清空所有的自选吗？</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="txt_market_scroll_hint">左右滑动,切换交易所</string>
+    <string name="txt_search_histroy">搜索历史</string>
+    <string name="txt_clear_search_histroy">清空</string>
+    <string name="txt_search_result">搜索结果</string>
+    <string name="txt_tape">盘口</string>
+
+    <string name="txt_search">搜索</string>
+    <string name="txt_add_to_my_change">添加至自选</string>
+    <string name="txt_search_to_want">找你想要的</string>
+    <string name="please_install_sina_share">请先安装新浪微博后再分享</string>
+    <string name="check_tabs_my">我的标签</string>
+    <string name="uncheck_tabs_click">点击添加标签</string>
+    <string name="today_value">今值</string>
+    <string name="future_value">预期</string>
+    <string name="before_value">前值</string>
+
+    <!--申请试阅-->
+    <string name="less_than_or_equal_to20" translatable="false">小于等于20个字符</string>
+    <string name="less_than_or_equal_to200" translatable="false">小于等于200个字符</string>
+    <string name="company_name" translatable="false">公司名</string>
+    <string name="contact_number" translatable="false">联系电话</string>
+    <string name="registered_phone" translatable="false">注册过的手机号</string>
+    <string name="the_content_or_variety_of_concern" translatable="false">关注的内容或品种</string>
+    <string name="Please_fill_in_the_content" translatable="false">请填写您关注的内容或品种</string>
+    <string name="try_to_apply_for_read" translatable="false">申请试阅</string>
+    <!--关于我们-->
+    <string name="Terms_of_service" translatable="false">用户服务条款</string>
+    <string name="statement_of_law" translatable="false">法律申明</string>
+    <string name="and" translatable="false">和</string>
+    <string name="declare" translatable="false">国金金属网 版权所有</string>
+    <string name="System_version" translatable="false">系统版本:</string>
+    <string name="device_model" translatable="false">设备型号:</string>
+    <string name="advice_feedback" translatable="false">建议反馈</string>
+    <string name="advice_feedback_info" translatable="false">请填写10个字以上的问题描述以便我们提供更好的帮助.</string>
+    <string name="screenshot" translatable="false">图片(选填,提供问题截图)</string>
+    <string name="phone_explain" translatable="false">选填,便于我们与您联系.</string>
+    <string name="add_custom" translatable="false">加入自定义</string>
+    <string name="delete_custom" translatable="false">移出自定义</string>
+    <string name="txt_month_time">时间</string>
+    <string name="txt_price">报价</string>
+    <string name="txt_center_value">中间值</string>
+    <string name="txt_unit">单位</string>
+    <string name="txt_avg_price">周均价</string>
+    <string name="txt_dian_shfe">SHFE近月持仓/上期所仓单,左轴</string>
+    <string name="txt_dian_shfeLme">LME注销仓单/LME库存,右轴</string>
+    <string name="txt_vip_volume">VIP专享内容>></string>
+    <string name="txt_price_3m_spread" translatable="false">对3M价差</string>
+    <string name="txt_price_two" translatable="false">价格</string>
+    <string name="flowLayout_set_edit_tips">you should setTags first</string>
+    <string name="txt_goods_price">品种/标的</string>
+    <string name="txt_otc_price">标的价格</string>
+    <string name="txt_buy_price">买价</string>
+    <string name="txt_buy_price_percent">买价%</string>
+    <string name="txt_sell_price_percent">卖价%</string>
+    <string name="more_than_10_words" translatable="false">请说明问题不少于10个字</string>
+    <string name="Image_upload_failed" translatable="false">图片上传失败</string>
+    <string name="contact_name" translatable="false">请填写姓名</string>
+    <string name="fill_in_the_company_name" translatable="false">请填写公司名称</string>
+    <string name="fill_in_the_contact_information" translatable="false">请填写联系方式</string>
+    <string name="understand" translatable="false">我知道了</string>
+    <string name="dialog_apply_text_one" translatable="false">此为付费VIP专享内容</string>
+    <string name="dialog_apply_text_two" translatable="false">请申请试阅或联系客服电话</string>
+    <string name="dialog_apply_text_five" translatable="false">您的试阅权限已到期</string>
+    <string name="dialog_apply_text_six" translatable="false">如需订购请联系客服</string>
+    <string name="service_phone_one" translatable="false">021-65039055</string>
+    <string name="service_phone_two" translatable="false">021-65039077</string>
+    <string name="change_day" translatable="false">日变动量</string>
+    <string name="change_week" translatable="false">一周变动量</string>
+    <string name="change_two_week" translatable="false">两周变动量</string>
+    <string name="lem_three_months" translatable="false">LME三个月结算价</string>
+    <string name="lem_swaps_structure" translatable="false">LME调期结构</string>
+    <string name="lem_definitely_price" translatable="false">LME绝对价</string>
+    <string name="txt_sell_price">卖价</string>
+    <string name="warning_has_expired" translatable="false">该预警已过期</string>
+    <string name="result" translatable="false">计算结果</string>
+    <string name="call_option" translatable="false">看涨</string>
+    <string name="put_option" translatable="false">看跌</string>
+    <string name="current_price" translatable="false">现价</string>
+    <string name="estimated_value" translatable="false">估算价值</string>
+    <string name="fetch" translatable="false">取</string>
+    <string name="exercise_price" translatable="false">行权价</string>
+    <string name="quotation_calculation" translatable="false">报价计算</string>
+    <string name="option_not_completed" translatable="false">选项未完成</string>
+    <string name="no_message">没有消息</string>
+    <string name="drag" translatable="false">长按拖动排序</string>
+    <string name="txt_avg_month_price">月均价</string>
+    <string name="txt_avg_week_price">周均价</string>
+    <string name="txt_install_intent_open">请检测手机是否安装浏览器</string>
+    <string name="text_uploadimg">正在上传请稍后</string>
+    <string name="contains_emoji">不支持输入Emoji表情符号</string>
+    <string name="txt_mymenu_message">消息</string>
+    <string name="txt_mymenu_message_desc">点击查看消息</string>
+    <string name="txt_mymenu_vip">VIP会员</string>
+    <string name="txt_mymenu_vip_desc">我的权益</string>
+    <string name="txt_mymenu_wran">预警</string>
+    <string name="txt_mymenu_wran_desc">预警列表管理</string>
+    <string name="txt_mymenu_mychange">自选</string>
+    <string name="txt_mymenu_change_desc">自选列表管理</string>
+    <string name="txt_mymenu_collect">收藏</string>
+    <string name="txt_mymenu_collect_desc">点击查看收藏</string>
+    <string name="vip_center">会员中心</string>
+    <string name="no_open_vip">未开通会员</string>
+    <string name="txt_vip_service">会员权益</string>
+    <string name="txt_no_service_time">已过期</string>
+    <string name="txt_callservice">联系客服</string>
+    <string name="txt_membersId">会员ID</string>
+    <string name="txt_login_edit">手机/邮箱/会员ID</string>
+    <string name="txt_email_error">邮箱错误</string>
+    <string name="txt_spot_analysis_detail">持仓分析详情</string>
+    <string name="txt_today_reduce">当日减少量</string>
+    <string name="txt_today_add">当日增加量</string>
+    <string name="txt_spotAnalysisDetail"><![CDATA[持仓详情>]]></string>
+    <string name="subtraction_text">跨月基差</string>
+    <string name="month_type">测算类型</string>
+    <string name="txt_variety">跨品种测算</string>
+    <string name="month_mode">计算方式</string>
+    <string name="difference_text">价差</string>
+    <string name="txt_specific">比值</string>
+    <string name="move_succeed">移出自定义成功</string>
+    <string name="add_succeed">加入自定义成功</string>
+    <string name="not_vip_cheack">此为付费内容</string>
+    <string name="try_to_apply_for_read_info">订购详情</string>
+    <string name="heyue_not_equal">所选合约不能相同</string>
+    <string name="decimal_point_digit">大于0，最大亿位，最小小数点后6位</string>
+    <string name="txt_connect_success">连接成功</string>
+    <string name="txt_isconnecting">正在连接中...</string>
+    <string name="txt_reconnect">当前连接已断开,会定时自动重连</string>
+    <string name="txt_market_search_hint">品种\\代码\\首字母</string>
+    <string name="txt_logo_hint">Copyright © 2000-2019 Guojin</string>
+    <string name="txt_api_error_try_again">连接服务器失败，\n请检查网络连接后再次启动程序</string>
+    <string name="read_is">已阅读</string>
+    <string name="text_procotol">注册即视为阅读并同意</string>
+    <string name="privacy">《隐私政策》</string>
+    <string name="user_privacy" translatable="false">用户隐私政策</string>
+    <string name="app_agreement">《app用户协议》</string>
+    <string name="read_to_register">已阅读，进入注册流程</string>
+    <string name="privacy_text">    天下金属尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，天下金属会按照本隐私权政策的规定使用和披露您的个人信息。但天下金属将以高度的勤勉、审慎义务对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，天下金属不会将这些信息对外披露或向第三方提供。天下金属会不时更新本隐私权政策。
+一、适用范围
+1、在您注册天下金属帐号时，您根据天下金属要求提供的个人注册信息；
+2、在您使用天下金属网络服务，天下金属自动接收并记录您的移动端和计算机上的信息，包括但不限于您的IP地址、浏览器的类型、使用的语言、访问日期和时间、软硬件特征信息及您需求的网页记录等数据；
+3、天下金属通过合法途径从商业伙伴处取得的用户个人数据。
+您了解并同意，以下信息不适用本隐私权政策：
+1、您在使用天下金属平台提供的搜索服务时输入的关键字信息；
+2、天下金属收集到的您在天下金属发布的有关信息数据，包括但不限于参与活动、成交信息及评价详情；
+3、违反法律规定或违反天下金属规则行为及天下金属已对您采取的措施。
+二、信息使用
+1、天下金属不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息，除非事先得到您的许可，或该第三方和天下金属（含天下金属关联公司）单独或共同为您提供服务，且在该服务结束后，其将被禁止访问包括其以前能够访问的所有这些资料。
+2、天下金属亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息。任何天下金属平台用户如从事上述活动，一经发现，天下金属有权立即终止与该用户的服务协议。
+3、为服务用户的目的，天下金属可能通过使用您的个人信息，向您提供您感兴趣的信息，包括但不限于向您发出产品和服务信息，或者与天下金属合作伙伴共享信息以便他们向您发送有关其产品和服务的信息（后者需要您的事先同意）。
+三、信息披露
+在如下情况下，天下金属将依据您的个人意愿或法律的规定全部或部分的披露您的个人信息：
+1、经您事先同意，向第三方披露；
+2、为提供您所要求的产品和服务，而必须和第三方分享您的个人信息；
+3、根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；
+4、如您出现违反中国有关法律、法规或者天下金属服务协议或相关规则的情况，需要向第三方披露；
+5、如您是适格的知识产权投诉人并已提起投诉，应被投诉人要求，向被投诉人披露，以便双方处理可能的权利纠纷；
+6、在天下金属平台上创建的某一交易中，如交易任何一方履行或部分履行了交易义务并提出信息披露请求的，天下金属有权决定向该用户提供其交易对方的联络方式等必要信息，以促成交易的完成或纠纷的解决。
+7、其它天下金属根据法律、法规或者网站政策认为合适的披露。
+四、信息存储和交换
+天下金属收集的有关您的信息和资料将保存在天下金属及（或）其关联公司的服务器上，这些信息和资料可能传送至您所在国家、地区或天下金属收集信息和资料所在地的境外并在境外被访问、存储和展示。
+五、Cookie的使用
+1、在您未拒绝接受cookies的情况下，天下金属会在您的移动端或计算机上设定或取用cookies，以便您能登录或使用依赖于cookies的天下金属平台服务或功能。天下金属使用cookies可为您提供更加周到的个性化服务，包括推广服务。
+2、您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的天下金属网络服务或功能。
+3、通过天下金属所设cookies所取得的有关信息，将适用本政策。
+六、信息安全
+1、天下金属帐号均有安全保护功能，请妥善保管您的用户名及密码信息。天下金属将通过对用户密码进行加密等安全措施确保您的信息不丢失，不被滥用和变造。尽管有前述安全措施，但同时也请您注意在信息网络上不存在“完善的安全措施”。 2、对于您在使用本公司的移动App中所收集的个人数据，我们会利用特殊加密方式对这些信息进行加密。在数据传输和数据保管两个阶段里，我们会通过广为接受的行业标准（如防火墙、加密和数据隐私法律要求）来保护您向我们提交的信息。然而，没有任何一种互联网传输或电子存储方法是100%安全的。因此，尽管我们通过商业上可接受的方式来保护您的个人信息，但仍无法保证信息的绝对安全。七、本隐私政策的更改
+1、如果决定更改隐私政策，我们会在本政策中、本公司网站中以及我们认为适当的位置发布这些更改，以便您了解我们如何收集、使用您的个人信息，哪些人可以访问这些信息，以及在什么情况下我们会透露这些信息。
+2、本公司保留随时修改本政策的权利，因此请经常查看。如对本政策作出重大更改，本公司会通过网站通知的形式告知。
+八、隐私问题
+如果你对本公司的隐私政策或数据处理有任何问题或顾虑，请通过021-6503905或 021-65039077与本公司联系。</string>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
